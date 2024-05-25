@@ -4,54 +4,8 @@ from datetime import datetime
 from PIL import ImageTk, Image
 import itertools
 
-def moon1():
-    global iw4, iw3, iw2, bz2, k, iw1, ivit, izam, itof, isn, korzina, d, wh1, wh2
-    k += 1
-    bs['image'] = sun
-    bs['command'] = sun1
-    l1['image'] = md1
-    br['bg'] = ser
-    bl['bg'] = ser
-    br['command'] = rd
-    bl['command'] = ld
-    br['activebackground'] = ser
-    bl['activebackground'] = ser
-    iw4 = PhotoImage(file='wd4.png')
-    iw3 = PhotoImage(file='w3d.png')
-    iw2 = PhotoImage(file='w2d.png')
-    iw1 = PhotoImage(file='pit2.png')
-    ivit = PhotoImage(file='vitd.png')
-    izam = PhotoImage(file='zam1d.png')
-    itof = PhotoImage(file='tof1d.png')
-    isn = PhotoImage(file='sn1d.png')
-    korzina = PhotoImage(file='korzd.png')
-    d = PhotoImage(file='zakd.png')
-    wh1 = '#343434'
-    wh2 = '#ABB8C3'
-def sun1():
-    global iw4, iw3, iw2, bz2, k, iw1, ivit, izam, itof, isn, korzina, d, wh1, wh2
-    k -= 1
-    bs['image'] = moon
-    bs['command'] = moon1
-    l1['image'] = m1
-    br['bg'] = wh
-    bl['bg'] = wh
-    br['command'] = r
-    bl['command'] = l
-    br['activebackground'] = wh
-    bl['activebackground'] = wh
-    iw4 = PhotoImage(file='w4.png')
-    iw3 = PhotoImage(file='w3.png')
-    iw2 = PhotoImage(file='w2.png')
-    #iw1 = PhotoImage(file='pit1.png')
-    ivit = PhotoImage(file='vitl.png')
-    izam = PhotoImage(file='zam1.png')
-    itof = PhotoImage(file='tof1.png')
-    isn = PhotoImage(file='sn1.png')
-    korzina = PhotoImage(file='korz.png')
-    d = PhotoImage(file='zak.png')
-    wh1 = 'white'
-    wh2 = 'black'
+
+
 def r():
     l1['image'] = m2
     br['command'] = r1
@@ -1002,18 +956,13 @@ iw1 = PhotoImage(file='korz.png')
 ivit = PhotoImage(file='vitl.png')
 izam = PhotoImage(file='zam1.png')
 itof = PhotoImage(file='tof1.png')
-isn = PhotoImage(file='sn1.png')
+isn = PhotoImage(file='О фильме Гром.png')
 korzina = PhotoImage(file='korz.png')
 d = PhotoImage(file='zak.png')
 l1 = Label(m, image=m1)
 l1.place(x=-2, y=0)
 
-sun = PhotoImage(file='sun (3).png')
-moon = PhotoImage(file='moon (2).png')
-bs = Button(m, image=moon, bg=gr, borderwidth=0, activebackground=dgr, command=moon1)
-bs.place(x=769, y=97)
-bs.bind('<Enter>', fs)
-bs.bind('<Leave>', fsl)
+
 bw1 = Button(m, bg=gr, borderwidth=0, height=1, width=20, text='Фильмы', fg=wh, font=f, activebackground=dgr,
              activeforeground=wh, command=b1)
 bw1.place(x=30, y=97)
