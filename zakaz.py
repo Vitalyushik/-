@@ -345,6 +345,8 @@ ________________________________________________________________________'''
         korz.bind('<Leave>', bk1)
         sn.grab_set()
         sn.mainloop()
+
+
 #АФИША С ВЫБОРОМ ФИЛЬМА
     def bk(e):
         korz.configure(bg=dgr)
@@ -361,15 +363,65 @@ ________________________________________________________________________'''
     lw1.pack(anchor=W)
     w1.title('Афиша')
     ik1 = PhotoImage(file='Майор Гром.png')
+    ik1t = PhotoImage(file='Майор Гром темный.png')
+    def dk1(e):
+        k1['image'] = ik1
+    def dk1t(e):
+        k1['image'] = ik1t
     ik2 = PhotoImage(file='Министерство неджентельменских дел.png')
+    ik2t = PhotoImage(file='Министерство неджентельменских дел темный.png')
+    def dk2(e):
+        k2['image'] = ik2
+    def dk2t(e):
+        k2['image'] = ik2t
     ik3 = PhotoImage(file='Планета обезьян.png')
+    ik3t = PhotoImage(file='Планета обезьян темный.png')
+    def dk3(e):
+        k3['image'] = ik3
+    def dk3t(e):
+        k3['image'] = ik3t
     ik4 = PhotoImage(file='Пушистый вояж.png')
+    ik4t = PhotoImage(file='Пушистый вояж темный.png')
+    def dk4(e):
+        k4['image'] = ik4
+    def dk4t(e):
+        k4['image'] = ik4t
     ik5 = PhotoImage(file='Сто лет тому вперед.png')
+    ik5t = PhotoImage(file='Сто лет тому вперед темный.png')
+    def dk5(e):
+        k5['image'] = ik5
+    def dk5t(e):
+        k5['image'] = ik5t
     ik6 = PhotoImage(file='незнакомцы.png')
+    ik6t = PhotoImage(file='Незнакомцы темная.png')
+    def dk6(e):
+        k6['image'] = ik6
+    def dk6t(e):
+        k6['image'] = ik6t
     ik7 = PhotoImage(file='Винни Пух.png')
+    ik7t = PhotoImage(file='Винни Пух темный.png')
+    def dk7(e):
+        k7['image'] = ik7
+    def dk7t(e):
+        k7['image'] = ik7t
     ik8 = PhotoImage(file='суперпташки.png')
+    ik8t = PhotoImage(file='суперпташки темная.png')
+    def dk8(e):
+        k8['image'] = ik8
+    def dk8t(e):
+        k8['image'] = ik8t
     ik9 = PhotoImage(file='судная ночь.png')
+    ik9t = PhotoImage(file='судная ночь темный.png')
+    def dk9(e):
+        k9['image'] = ik9
+    def dk9t(e):
+        k9['image'] = ik9t
     ik10 = PhotoImage(file='Асфальтовые джунгли.png')
+    ik10t = PhotoImage(file='Асфальтовые джунгли темный.png')
+    def dk10(e):
+        k10['image'] = ik10
+    def dk10t(e):
+        k10['image'] = ik10t
     kor = PhotoImage(file='kor.png')
 
     korz = Button(w1, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
@@ -379,24 +431,44 @@ ________________________________________________________________________'''
 
     k1 = Button(w1, image=ik1, bg=wh, borderwidth=0, activebackground=wh, command=sn1)
     k1.place(x=0, y=0)
+    k1.bind('<Enter>', dk1t)
+    k1.bind('<Leave>', dk1)
     k2 = Button(w1, image=ik2, bg=wh, borderwidth=0, activebackground=wh, command=tof1)
     k2.place(x=153, y=0)
+    k2.bind('<Enter>', dk2t)
+    k2.bind('<Leave>', dk2)
     k3 = Button(w1, image=ik3, bg=wh, borderwidth=0, activebackground=wh, command=zam1)
     k3.place(x=303, y=0)
+    k3.bind('<Enter>', dk3t)
+    k3.bind('<Leave>', dk3)
     k4 = Button(w1, image=ik4, bg=wh, borderwidth=0, activebackground=wh, command=vit)
     k4.place(x=452, y=0)
+    k4.bind('<Enter>', dk4t)
+    k4.bind('<Leave>', dk4)
     k5 = Button(w1, image=ik5, bg=wh, borderwidth=0, activebackground=wh, command=sltn)
     k5.place(x=600, y=0)
+    k5.bind('<Enter>', dk5t)
+    k5.bind('<Leave>', dk5)
     k6 = Button(w1, image=ik6, bg=wh, borderwidth=0, activebackground=wh, command=nez)
     k6.place(x=0, y=319)
+    k6.bind('<Enter>', dk6t)
+    k6.bind('<Leave>', dk6)
     k7 = Button(w1, image=ik7, bg=wh, borderwidth=0, activebackground=wh, command=vp)
     k7.place(x=153, y=319)
+    k7.bind('<Enter>', dk7t)
+    k7.bind('<Leave>', dk7)
     k8 = Button(w1, image=ik8, bg=wh, borderwidth=0, activebackground=wh, command=superp)
     k8.place(x=303, y=319)
+    k8.bind('<Enter>', dk8t)
+    k8.bind('<Leave>', dk8)
     k9 = Button(w1, image=ik9, bg=wh, borderwidth=0, activebackground=wh, command=sudn)
     k9.place(x=452, y=319)
+    k9.bind('<Enter>', dk9t)
+    k9.bind('<Leave>', dk9)
     k10 = Button(w1, image=ik10, bg=wh, borderwidth=0, activebackground=wh, command=adel)
     k10.place(x=600, y=319)
+    k10.bind('<Enter>', dk10t)
+    k10.bind('<Leave>', dk10)
 
     w1.grab_set()
     w1.mainloop()
