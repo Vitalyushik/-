@@ -1,6 +1,8 @@
 from tkinter import *
 from random import *
 from datetime import datetime
+from PIL import ImageTk, Image
+import itertools
 
 def moon1():
     global iw4, iw3, iw2, bz2, k, iw1, ivit, izam, itof, isn, korzina, d, wh1, wh2
@@ -1022,4 +1024,13 @@ br.place(x=689, y=205)
 bl1 = PhotoImage(file='l.png')
 bl = Button(m, image=bl1, bg=wh, borderwidth=0, command=l)
 bl.place(x=55, y=205)
+
+photos = [ImageTk.PhotoImage(Image.open(f"main{i}.png").resize((800, 600))) for i in range(1, 4)]
+photo_iterator = itertools.cycle(photos)
+
+def update_photo():
+    l1.config(image=next(photo_iterator))
+    l1.after(5000, update_photo)
+update_photo()
+
 m.mainloop()
