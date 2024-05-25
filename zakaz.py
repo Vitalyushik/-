@@ -255,7 +255,7 @@ ________________________________________________________________________'''
         def bk1(e):
             korz.configure(bg='#93F9B9')
         vit = Toplevel(w1)
-        vit.title('Фильмы')
+        vit.title('Виталя гей')
         vit.iconbitmap('ic.ico')
         vit.geometry('834x300+200+50')
         vit.resizable(False, False)
@@ -932,15 +932,6 @@ def fb3(e):
 def fb3l(e):
     bw3.configure(bg=gr)
 
-
-def fb4(e):
-    bw4.configure(bg=dgr)
-
-
-def fb4l(e):
-    bw4.configure(bg=gr)
-
-
 def fs(e):
     bs.configure(bg=dgr)
 
@@ -1024,12 +1015,6 @@ bw3 = Button(m, bg=gr, borderwidth=0, height=1, width=10, text='Контакты
 bw3.place(x=430, y=97)
 bw3.bind('<Enter>', fb3)
 bw3.bind('<Leave>', fb3l)
-
-bw4 = Button(m, bg=gr, borderwidth=0, height=1, width=22, text='Начни день с ПРЕМЬЕР ЗАЛА', fg=wh, font=f,
-             activebackground=dgr, activeforeground=wh, command=b4)
-bw4.place(x=550, y=97)
-bw4.bind('<Enter>', fb4)
-bw4.bind('<Leave>', fb4l)
 
 br1 = PhotoImage(file='r.png')
 br = Button(m, image=br1, bg=wh, borderwidth=0, command=r)
