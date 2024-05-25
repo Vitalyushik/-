@@ -4,8 +4,6 @@ from datetime import datetime
 from PIL import ImageTk, Image
 import itertools
 
-
-
 def r():
     l1['image'] = m2
     br['command'] = r1
@@ -548,9 +546,9 @@ ________________________________________________________________________'''
             korz.configure(bg='#93F9B9')
 
         sn = Toplevel(w1)
-        sn.title('Подробнее')
+        sn.title('О фильме Гром')
         sn.iconbitmap('ic.ico')
-        sn.geometry('834x300+200+50')
+        sn.geometry('834x405')
 
         sn.resizable(False, False)
         ls5 = Label(sn, image=isn)
@@ -559,38 +557,6 @@ ________________________________________________________________________'''
         korz.place(x=802, y=0)
         korz.bind('<Enter>', bk)
         korz.bind('<Leave>', bk1)
-        ls1 = Label(sn, text=c1, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        ls1.place(x=96, y=228)
-        p1 = Button(sn, text='+', bg=wh, borderwidth=0, font='40', command=k1, activebackground=wh)
-        p1.place(x=112, y=224)
-        min1 = Button(sn, text='-', bg=wh, borderwidth=0, font='40', command=k01, activebackground=wh)
-        min1.place(x=80, y=223)
-        ls2 = Label(sn, text=c2, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        ls2.place(x=290, y=228)
-        min2 = Button(sn, text='-', bg=wh, borderwidth=0, font='40', command=k02, activebackground=wh)
-        min2.place(x=274, y=223)
-        p2 = Button(sn, text='+', bg=wh, borderwidth=0, font='40', command=k2, activebackground=wh)
-        p2.place(x=306, y=224)
-        ls3 = Label(sn, text=c3, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        ls3.place(x=484, y=228)
-        min3 = Button(sn, text='-', bg=wh, borderwidth=0, font='40', command=k03, activebackground=wh)
-        min3.place(x=468, y=223)
-        p3 = Button(sn, text='+', bg=wh, borderwidth=0, font='40', command=k3, activebackground=wh)
-        p3.place(x=500, y=224)
-        ls4 = Label(sn, text=c4, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        ls4.place(x=678, y=228)
-        p4 = Button(sn, text='+', bg=wh, borderwidth=0, font='40', command=k4, activebackground=wh)
-        p4.place(x=694, y=224)
-        min4 = Button(sn, text='-', bg=wh, borderwidth=0, font='40', command=k04, activebackground=wh)
-        min4.place(x=662, y=223)
-        lc1 = Label(sn, text='44p.', bg=wh)
-        lc1.place(x=90, y=214)
-        lc2 = Label(sn, text='99p.', bg=wh)
-        lc2.place(x=284, y=214)
-        lc3 = Label(sn, text='225p.', bg=wh)
-        lc3.place(x=478, y=214)
-        lc4 = Label(sn, text='38p.', bg=wh)
-        lc4.place(x=672, y=214)
         sn.grab_set()
         sn.mainloop()
 
@@ -614,6 +580,10 @@ ________________________________________________________________________'''
     ik4 = PhotoImage(file='Пушистый вояж.png')
     ik5 = PhotoImage(file='Сто лет тому вперед.png')
     ik6 = PhotoImage(file='незнакомцы.png')
+    ik7 = PhotoImage(file='Винни Пух.png')
+    ik8 = PhotoImage(file='суперпташки.png')
+    ik9 = PhotoImage(file='судная ночь.png')
+    ik10 = PhotoImage(file='Асфальтовые джунгли.png')
     kor = PhotoImage(file='kor.png')
 
     korz = Button(w1, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
@@ -633,14 +603,14 @@ ________________________________________________________________________'''
     k5.place(x=600, y=0)
     k6 = Button(w1, image=ik6, bg=wh, borderwidth=0, activebackground=wh, command=sn1)
     k6.place(x=0, y=319)
-    k7 = Button(w1, image=ik2, bg=wh, borderwidth=0, activebackground=wh, command=tof1)
-    k7.place(x=153, y=0)
-    k8 = Button(w1, image=ik3, bg=wh, borderwidth=0, activebackground=wh, command=zam1)
-    k8.place(x=303, y=0)
-    k9 = Button(w1, image=ik4, bg=wh, borderwidth=0, activebackground=wh, command=vit)
-    k9.place(x=452, y=0)
-    k10 = Button(w1, image=ik5, bg=wh, borderwidth=0, activebackground=wh, command=vit)
-    k10.place(x=600, y=0)
+    k7 = Button(w1, image=ik7, bg=wh, borderwidth=0, activebackground=wh, command=tof1)
+    k7.place(x=153, y=319)
+    k8 = Button(w1, image=ik8, bg=wh, borderwidth=0, activebackground=wh, command=zam1)
+    k8.place(x=303, y=319)
+    k9 = Button(w1, image=ik9, bg=wh, borderwidth=0, activebackground=wh, command=vit)
+    k9.place(x=452, y=319)
+    k10 = Button(w1, image=ik10, bg=wh, borderwidth=0, activebackground=wh, command=vit)
+    k10.place(x=600, y=319)
 
     w1.grab_set()
     w1.mainloop()
