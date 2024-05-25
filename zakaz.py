@@ -141,77 +141,17 @@ ________________________________________________________________________'''
         wk.grab_set()
         wk.mainloop()
 
+#ФУНКЦИИ ВЫЗЫВАЮЩИЕ ОПИСАНИЕ КАЖДОГО ФИЛЬМА
     def vit():
-        global c13, c14, c15, c16, g
-
-        def k13():
-            global c13
-            if c13 < 9:
-                c13 += 1
-            lv1['text'] = c13
-            g.append('Витамин D3  165p.')
-
-        def k14():
-            global c14
-            if c14 < 9:
-                c14 += 1
-            lv2['text'] = c14
-            g.append('Ретинол     749p.')
-
-        def k15():
-            global c15
-            if c15 < 9:
-                c15 += 1
-            lv3['text'] = c15
-            g.append(f'Омега-3    1499p.')
-
-        def k16():
-            global c16
-            if c16 < 9:
-                c16 += 1
-            lv4['text'] = c16
-            g.append(f'Витамин К2  659p.')
-
-        def k113():
-            global c13
-            if c13 > 0:
-                c13 -= 1
-                g.remove('Витамин D3  165p.')
-            lv1['text'] = c13
-
-
-        def k114():
-            global c14
-            if c14 > 0:
-                c14 -= 1
-                g.remove('Ретинол     749p.')
-            lv2['text'] = c14
-
-
-        def k115():
-            global c15
-            if c15 > 0:
-                c15 -= 1
-                g.remove('Омега-3    1499p.')
-            lv3['text'] = c15
-
-
-        def k116():
-            global c16
-            if c16 > 0:
-                c16 -= 1
-                g.remove('Витамин К2  659p.')
-            lv4['text'] = c16
-
         def bk(e):
             korz.configure(bg=dgr)
 
         def bk1(e):
             korz.configure(bg='#93F9B9')
         vit = Toplevel(w1)
-        vit.title('Фильмы')
+        vit.title('О ФИЛЬМЕ ПУШИСТЫЙ ВОЯЖ')
         vit.iconbitmap('ic.ico')
-        vit.geometry('834x300+200+50')
+        vit.geometry('834x400')
         vit.resizable(False, False)
         lv = Label(vit, image=ivit)
         lv.pack(anchor=W)
@@ -219,111 +159,145 @@ ________________________________________________________________________'''
         korz.place(x=802, y=0)
         korz.bind('<Enter>', bk)
         korz.bind('<Leave>', bk1)
-        lv1 = Label(vit, text=c13, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        lv1.place(x=96, y=228)
-        p1 = Button(vit, text='+', bg=wh, borderwidth=0, font='40', command=k13, activebackground=wh)
-        p1.place(x=112, y=224)
-        min1 = Button(vit, text='-', bg=wh, borderwidth=0, font='40', command=k113, activebackground=wh)
-        min1.place(x=80, y=223)
-        lv2 = Label(vit, text=c14, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        lv2.place(x=290, y=228)
-        min2 = Button(vit, text='-', bg=wh, borderwidth=0, font='40', command=k114, activebackground=wh)
-        min2.place(x=274, y=223)
-        p2 = Button(vit, text='+', bg=wh, borderwidth=0, font='40', command=k14, activebackground=wh)
-        p2.place(x=306, y=224)
-        lv3 = Label(vit, text=c15, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        lv3.place(x=484, y=228)
-        min3 = Button(vit, text='-', bg=wh, borderwidth=0, font='40', command=k115, activebackground=wh)
-        min3.place(x=468, y=223)
-        p3 = Button(vit, text='+', bg=wh, borderwidth=0, font='40', command=k15, activebackground=wh)
-        p3.place(x=500, y=224)
-        lv4 = Label(vit, text=c16, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        lv4.place(x=678, y=228)
-        p4 = Button(vit, text='+', bg=wh, borderwidth=0, font='40', command=k16, activebackground=wh)
-        p4.place(x=694, y=224)
-        min4 = Button(vit, text='-', bg=wh, borderwidth=0, font='40', command=k116, activebackground=wh)
-        min4.place(x=662, y=223)
-        lc13 = Label(vit, text='165p.', bg=wh)
-        lc13.place(x=90, y=214)
-        lc14 = Label(vit, text='749p.', bg=wh)
-        lc14.place(x=284, y=214)
-        lc15 = Label(vit, text='1499p.', bg=wh)
-        lc15.place(x=478, y=214)
-        lc16 = Label(vit, text='659p.', bg=wh)
-        lc16.place(x=672, y=214)
         vit.grab_set()
         vit.mainloop()
 
+    def sltn():
+        def bk(e):
+            korz.configure(bg=dgr)
+
+        def bk1(e):
+            korz.configure(bg='#93F9B9')
+        sltn = Toplevel(w1)
+        sltn.title('О ФИЛЬМЕ СТО ЛЕТ ТОМУ ВПЕРЕД')
+        sltn.iconbitmap('ic.ico')
+        sltn.geometry('834x400')
+        sltn.resizable(False, False)
+        lv = Label(sltn, image=isltn)
+        lv.pack(anchor=W)
+        korz = Button(sltn, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
+        korz.place(x=802, y=0)
+        korz.bind('<Enter>', bk)
+        korz.bind('<Leave>', bk1)
+        sltn.grab_set()
+        sltn.mainloop()
+
+    def superp():
+        def bk(e):
+            korz.configure(bg=dgr)
+
+        def bk1(e):
+            korz.configure(bg='#93F9B9')
+
+        superp = Toplevel(w1)
+        superp.title('О ФИЛЬМЕ СУПЕРПТАШКИ')
+        superp.iconbitmap('ic.ico')
+        superp.geometry('834x400')
+        superp.resizable(False, False)
+        lv = Label(superp, image=isuperp)
+        lv.pack(anchor=W)
+        korz = Button(superp, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
+        korz.place(x=802, y=0)
+        korz.bind('<Enter>', bk)
+        korz.bind('<Leave>', bk1)
+        superp.grab_set()
+        superp.mainloop()
+
+    def adel():
+        def bk(e):
+            korz.configure(bg=dgr)
+
+        def bk1(e):
+            korz.configure(bg='#93F9B9')
+
+        adel = Toplevel(w1)
+        adel.title('О ФИЛЬМЕ АСФАЛЬТОВЫЕ ДЖУНГЛИ')
+        adel.iconbitmap('ic.ico')
+        adel.geometry('834x400')
+        adel.resizable(False, False)
+        lv = Label(adel, image=iadel)
+        lv.pack(anchor=W)
+        korz = Button(adel, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
+        korz.place(x=802, y=0)
+        korz.bind('<Enter>', bk)
+        korz.bind('<Leave>', bk1)
+        adel.grab_set()
+        adel.mainloop()
+
+
+    def nez():
+        def bk(e):
+            korz.configure(bg=dgr)
+
+        def bk1(e):
+            korz.configure(bg='#93F9B9')
+
+        nez = Toplevel(w1)
+        nez.title('О ФИЛЬМЕ НЕЗНАКОМЦЫ')
+        nez.iconbitmap('ic.ico')
+        nez.geometry('834x400')
+        nez.resizable(False, False)
+        lv = Label(nez, image=inez)
+        lv.pack(anchor=W)
+        korz = Button(nez, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
+        korz.place(x=802, y=0)
+        korz.bind('<Enter>', bk)
+        korz.bind('<Leave>', bk1)
+        nez.grab_set()
+        nez.mainloop()
+
+    def vp():
+        def bk(e):
+            korz.configure(bg=dgr)
+
+        def bk1(e):
+            korz.configure(bg='#93F9B9')
+
+        vp = Toplevel(w1)
+        vp.title('О ФИЛЬМЕ ВИННИ ПУХ')
+        vp.iconbitmap('ic.ico')
+        vp.geometry('834x400')
+        vp.resizable(False, False)
+        lv = Label(vp, image=ivp)
+        lv.pack(anchor=W)
+        korz = Button(vp, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
+        korz.place(x=802, y=0)
+        korz.bind('<Enter>', bk)
+        korz.bind('<Leave>', bk1)
+        vp.grab_set()
+        vp.mainloop()
+
+    def sudn():
+        def bk(e):
+            korz.configure(bg=dgr)
+
+        def bk1(e):
+            korz.configure(bg='#93F9B9')
+
+        sudn = Toplevel(w1)
+        sudn.title('О ФИЛЬМЕ СУДНАЯ НОЧЬ')
+        sudn.iconbitmap('ic.ico')
+        sudn.geometry('834x400')
+        sudn.resizable(False, False)
+        lv = Label(sudn, image=isudn)
+        lv.pack(anchor=W)
+        korz = Button(sudn, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
+        korz.place(x=802, y=0)
+        korz.bind('<Enter>', bk)
+        korz.bind('<Leave>', bk1)
+        sudn.grab_set()
+        sudn.mainloop()
+
     def zam1():
-        global c9, c10, c11, c12, g
-
-        def k9():
-            global c9
-            if c9 < 9:
-                c9 += 1
-            lz1['text'] = c9
-            g.append(f'Котлеты нутовыве    145p.')
-
-        def k10():
-            global c10
-            if c10 < 9:
-                c10 += 1
-            lz2['text'] = c10
-            g.append(f'Тефтели с тофу      299p.')
-
-        def k11():
-            global c11
-            if c11 < 9:
-                c11 += 1
-            lz3['text'] = c11
-            g.append(f'Нагетсы растительные    249p.')
-
-        def k12():
-            global c12
-            if c12 < 9:
-                c12 += 1
-            lz4['text'] = c12
-            g.append(f'Колбаса с сыром   469p.')
-
-        def k19():
-            global c9
-            if c9 > 0:
-                c9 -= 1
-                g.remove('Котлеты нутовыве    145p.')
-            lz1['text'] = c9
-
-
-        def k110():
-            global c10
-            if c10 > 0:
-                c10 -= 1
-                g.remove('Тефтели с тофу      299p.')
-            lz2['text'] = c10
-
-
-        def k111():
-            global c11
-            if c11 > 0:
-                c11 -= 1
-                g.remove('Нагетсы растительные    249p.')
-            lz3['text'] = c11
-
-        def k112():
-            global c12
-            if c12 > 0:
-                c12 -= 1
-                g.remove('Колбаса с сыром   469p.')
-            lz4['text'] = c12
-
         def bk(e):
             korz.configure(bg=dgr)
 
         def bk1(e):
             korz.configure(bg='#93F9B9')
         zam = Toplevel(w1)
-        zam.title('Заменители мяса')
+        zam.title('О ФИЛЬМЕ ПЛАНЕТА ОБЕЗЬЯН')
         zam.iconbitmap('ic.ico')
-        zam.geometry('834x300+200+50')
+        zam.geometry('834x400')
         zam.resizable(False, False)
         lz = Label(zam, image=izam)
         lz.pack(anchor=W)
@@ -331,110 +305,14 @@ ________________________________________________________________________'''
         korz.place(x=802, y=0)
         korz.bind('<Enter>', bk)
         korz.bind('<Leave>', bk1)
-        lz1 = Label(zam, text=c9, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        lz1.place(x=96, y=228)
-        p1 = Button(zam, text='+', bg=wh, borderwidth=0, font='40', command=k9, activebackground=wh)
-        p1.place(x=112, y=224)
-        min1 = Button(zam, text='-', bg=wh, borderwidth=0, font='40', command=k19, activebackground=wh)
-        min1.place(x=80, y=223)
-        lz2 = Label(zam, text=c10, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        lz2.place(x=290, y=228)
-        min2 = Button(zam, text='-', bg=wh, borderwidth=0, font='40', command=k110, activebackground=wh)
-        min2.place(x=274, y=223)
-        p2 = Button(zam, text='+', bg=wh, borderwidth=0, font='40', command=k10, activebackground=wh)
-        p2.place(x=306, y=224)
-        lz3 = Label(zam, text=c11, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        lz3.place(x=484, y=228)
-        min3 = Button(zam, text='-', bg=wh, borderwidth=0, font='40', command=k111, activebackground=wh)
-        min3.place(x=468, y=223)
-        p3 = Button(zam, text='+', bg=wh, borderwidth=0, font='40', command=k11, activebackground=wh)
-        p3.place(x=500, y=224)
-        lz4 = Label(zam, text=c12, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        lz4.place(x=678, y=228)
-        p4 = Button(zam, text='+', bg=wh, borderwidth=0, font='40', command=k12, activebackground=wh)
-        p4.place(x=694, y=224)
-        min4 = Button(zam, text='-', bg=wh, borderwidth=0, font='40', command=k112, activebackground=wh)
-        min4.place(x=662, y=223)
-        lc9 = Label(zam, text='145p.', bg=wh)
-        lc9.place(x=90, y=214)
-        lc10 = Label(zam, text='299p.', bg=wh)
-        lc10.place(x=284, y=214)
-        lc11 = Label(zam, text='249p.', bg=wh)
-        lc11.place(x=478, y=214)
-        lc12 = Label(zam, text='469p.', bg=wh)
-        lc12.place(x=672, y=214)
         zam.grab_set()
         zam.mainloop()
 
     def tof1():
-        global c5, c6, c7, c8, g
-
-        def k5():
-            global c5
-            if c5 < 9:
-                c5 += 1
-            lt1['text'] = c5
-            g.append(f'Тофу        119p.')
-
-        def k6():
-            global c6
-            if c6 < 9:
-                c6 += 1
-            lt2['text'] = c6
-            g.append(f'Тофу копчённый    199p.')
-
-        def k7():
-            global c7
-            if c7 < 9:
-                c7 += 1
-            lt3['text'] = c7
-            g.append(f'Тофу с укропом     128p.')
-
-        def k8():
-            global c8
-            if c8 < 9:
-                c8 += 1
-            lt4['text'] = c8
-            g.append(f'Творог соевый     299p.')
-
-        def k51():
-            global c5
-            if c5 > 0:
-                c5 -= 1
-            g.remove('Тофу        119p.')
-            lt1['text'] = c5
-
-        def k61():
-            global c6
-            if c6 > 0:
-                c6 -= 1
-                g.remove('Тофу копчённый    199p.')
-            lt2['text'] = c6
-
-        def k71():
-            global c7
-            if c7 > 0:
-                c7 -= 1
-                g.remove('Тофу с укропом     128p.')
-            lt3['text'] = c7
-
-        def k81():
-            global c8
-            if c8 > 0:
-                c8 -= 1
-                g.remove('Творог соевый     299p.')
-            lt4['text'] = c8
-
-        def bk(e):
-            korz.configure(bg=dgr)
-
-        def bk1(e):
-            korz.configure(bg='#93F9B9')
-
         tof = Toplevel(w1)
-        tof.title('Фильмы')
+        tof.title('О ФИЛЬМЕ МИНЕСТЕРСТВО НЕДЖЕНТЕЛЬМЕНСКИХ ДЕЛ')
         tof.iconbitmap('ic.ico')
-        tof.geometry('834x300+200+50')
+        tof.geometry('834x400')
         tof.resizable(False, False)
         lt = Label(tof, image=itof)
         lt.pack(anchor=W)
@@ -442,102 +320,10 @@ ________________________________________________________________________'''
         korz.place(x=802, y=0)
         korz.bind('<Enter>', bk)
         korz.bind('<Leave>', bk1)
-        lt1 = Label(tof, text=c13, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        lt1.place(x=96, y=228)
-        p1 = Button(tof, text='+', bg=wh, borderwidth=0, font='40', command=k5, activebackground=wh)
-        p1.place(x=112, y=224)
-        min1 = Button(tof, text='-', bg=wh, borderwidth=0, font='40', command=k51, activebackground=wh)
-        min1.place(x=80, y=223)
-        lt2 = Label(tof, text=c14, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        lt2.place(x=290, y=228)
-        min2 = Button(tof, text='-', bg=wh, borderwidth=0, font='40', command=k61, activebackground=wh)
-        min2.place(x=274, y=223)
-        p2 = Button(tof, text='+', bg=wh, borderwidth=0, font='40', command=k6, activebackground=wh)
-        p2.place(x=306, y=224)
-        lt3 = Label(tof, text=c15, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        lt3.place(x=484, y=228)
-        min3 = Button(tof, text='-', bg=wh, borderwidth=0, font='40', command=k71, activebackground=wh)
-        min3.place(x=468, y=223)
-        p3 = Button(tof, text='+', bg=wh, borderwidth=0, font='40', command=k7, activebackground=wh)
-        p3.place(x=500, y=224)
-        lt4 = Label(tof, text=c16, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        lt4.place(x=678, y=228)
-        p4 = Button(tof, text='+', bg=wh, borderwidth=0, font='40', command=k8, activebackground=wh)
-        p4.place(x=694, y=224)
-        min4 = Button(tof, text='-', bg=wh, borderwidth=0, font='40', command=k81, activebackground=wh)
-        min4.place(x=662, y=223)
-        lc5 = Label(tof, text='119p.', bg=wh)
-        lc5.place(x=90, y=214)
-        lc6 = Label(tof, text='199p.', bg=wh)
-        lc6.place(x=284, y=214)
-        lc7 = Label(tof, text='128p.', bg=wh)
-        lc7.place(x=478, y=214)
-        lc8 = Label(tof, text='299p.', bg=wh)
-        lc8.place(x=672, y=214)
         tof.grab_set()
         tof.mainloop()
 
     def sn1():
-        global c1, c2, c3, c4, g
-
-        def k1():
-            global c1
-            if c1 < 9:
-                c1 += 1
-            ls1['text'] = c1
-            g.append(f'Козинаки      44p.')
-
-        def k2():
-            global c2
-            if c2 < 9:
-                c2 += 1
-            ls2['text'] = c2
-            g.append(f'Нутсы(сыр)      99p.')
-
-        def k3():
-            global c3
-            if c3 < 9:
-                c3 += 1
-            ls3['text'] = c3
-            g.append(f'Флаксы   225p.')
-
-        def k4():
-            global c4
-            if c4 < 9:
-                c4 += 1
-            ls4['text'] = c4
-            g.append(f'Батончик кокосовый     38p.')
-
-        def k01():
-            global c1
-            if c1 > 0:
-                c1 -= 1
-                g.remove('Козинаки      44p.')
-            ls1['text'] = c1
-
-
-        def k02():
-            global c2
-            if c2 > 0:
-                c2 -= 1
-                g.remove('Нутсы(сыр)      99p.')
-            ls2['text'] = c2
-
-
-        def k03():
-            global c3
-            if c3 > 0:
-                c3 -= 1
-                g.remove('Флаксы   225p.')
-            ls3['text'] = c3
-
-
-        def k04():
-            global c4
-            if c4 > 0:
-                c4 -= 1
-                g.remove('Батончик кокосовый     38p.')
-            ls4['text'] = c4
 
         def bk(e):
             korz.configure(bg=dgr)
@@ -546,9 +332,9 @@ ________________________________________________________________________'''
             korz.configure(bg='#93F9B9')
 
         sn = Toplevel(w1)
-        sn.title('О фильме Гром')
+        sn.title('О ФИЛЬМЕ МАЙОР ГРОМ')
         sn.iconbitmap('ic.ico')
-        sn.geometry('834x405')
+        sn.geometry('834x400')
 
         sn.resizable(False, False)
         ls5 = Label(sn, image=isn)
@@ -559,7 +345,7 @@ ________________________________________________________________________'''
         korz.bind('<Leave>', bk1)
         sn.grab_set()
         sn.mainloop()
-
+#АФИША С ВЫБОРОМ ФИЛЬМА
     def bk(e):
         korz.configure(bg=dgr)
 
@@ -599,84 +385,23 @@ ________________________________________________________________________'''
     k3.place(x=303, y=0)
     k4 = Button(w1, image=ik4, bg=wh, borderwidth=0, activebackground=wh, command=vit)
     k4.place(x=452, y=0)
-    k5 = Button(w1, image=ik5, bg=wh, borderwidth=0, activebackground=wh, command=vit)
+    k5 = Button(w1, image=ik5, bg=wh, borderwidth=0, activebackground=wh, command=sltn)
     k5.place(x=600, y=0)
-    k6 = Button(w1, image=ik6, bg=wh, borderwidth=0, activebackground=wh, command=sn1)
+    k6 = Button(w1, image=ik6, bg=wh, borderwidth=0, activebackground=wh, command=nez)
     k6.place(x=0, y=319)
-    k7 = Button(w1, image=ik7, bg=wh, borderwidth=0, activebackground=wh, command=tof1)
+    k7 = Button(w1, image=ik7, bg=wh, borderwidth=0, activebackground=wh, command=vp)
     k7.place(x=153, y=319)
-    k8 = Button(w1, image=ik8, bg=wh, borderwidth=0, activebackground=wh, command=zam1)
+    k8 = Button(w1, image=ik8, bg=wh, borderwidth=0, activebackground=wh, command=superp)
     k8.place(x=303, y=319)
-    k9 = Button(w1, image=ik9, bg=wh, borderwidth=0, activebackground=wh, command=vit)
+    k9 = Button(w1, image=ik9, bg=wh, borderwidth=0, activebackground=wh, command=sudn)
     k9.place(x=452, y=319)
-    k10 = Button(w1, image=ik10, bg=wh, borderwidth=0, activebackground=wh, command=vit)
+    k10 = Button(w1, image=ik10, bg=wh, borderwidth=0, activebackground=wh, command=adel)
     k10.place(x=600, y=319)
 
     w1.grab_set()
     w1.mainloop()
 def b2():
     def vit1():
-        global c13, c14, c15, c16
-
-        def k13():
-            global c13
-            if c13 < 9:
-                c13 += 1
-            lv1['text'] = c13
-            g.append('Витамин D3  165p.')
-
-        def k14():
-            global c14
-            if c14 < 9:
-                c14 += 1
-            lv2['text'] = c14
-            g.append('Ретинол     749p.')
-
-        def k15():
-            global c15
-            if c15 < 9:
-                c15 += 1
-            lv3['text'] = c15
-            g.append(f'Омега-3    1499p.')
-
-        def k16():
-            global c16
-            if c16 < 9:
-                c16 += 1
-            lv4['text'] = c16
-            g.append(f'Витамин К2  659p.')
-
-        def k113():
-            global c13
-            if c13 > 0:
-                c13 -= 1
-                g.remove('Витамин D3  165p.')
-            lv1['text'] = c13
-
-
-        def k114():
-            global c14
-            if c14 > 0:
-                c14 -= 1
-                g.remove('Ретинол     749p.')
-            lv2['text'] = c14
-
-
-        def k115():
-            global c15
-            if c15 > 0:
-                c15 -= 1
-                g.remove('Омега-3    1499p.')
-            lv3['text'] = c15
-
-
-        def k116():
-            global c16
-            if c16 > 0:
-                c16 -= 1
-                g.remove('Витамин К2  659p.')
-            lv4['text'] = c16
-
         def korz1():
             def chek():
                 ch = Toplevel(wk)
@@ -772,38 +497,6 @@ ________________________________________________________________________'''
         korz.place(x=802, y=0)
         korz.bind('<Enter>', bk)
         korz.bind('<Leave>', bk1)
-        lv1 = Label(vit, text=c13, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        lv1.place(x=96, y=228)
-        p1 = Button(vit, text='+', bg=wh, borderwidth=0, font='40', command=k13, activebackground=wh)
-        p1.place(x=112, y=224)
-        min1 = Button(vit, text='-', bg=wh, borderwidth=0, font='40', command=k113, activebackground=wh)
-        min1.place(x=80, y=223)
-        lv2 = Label(vit, text=c14, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        lv2.place(x=290, y=228)
-        min2 = Button(vit, text='-', bg=wh, borderwidth=0, font='40', command=k114, activebackground=wh)
-        min2.place(x=274, y=223)
-        p2 = Button(vit, text='+', bg=wh, borderwidth=0, font='40', command=k14, activebackground=wh)
-        p2.place(x=306, y=224)
-        lv3 = Label(vit, text=c15, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        lv3.place(x=484, y=228)
-        min3 = Button(vit, text='-', bg=wh, borderwidth=0, font='40', command=k115, activebackground=wh)
-        min3.place(x=468, y=223)
-        p3 = Button(vit, text='+', bg=wh, borderwidth=0, font='40', command=k15, activebackground=wh)
-        p3.place(x=500, y=224)
-        lv4 = Label(vit, text=c16, bg=wh, width=1, height=1, font=('Inter', '14'), fg=ls)
-        lv4.place(x=678, y=228)
-        p4 = Button(vit, text='+', bg=wh, borderwidth=0, font='40', command=k16, activebackground=wh)
-        p4.place(x=694, y=224)
-        min4 = Button(vit, text='-', bg=wh, borderwidth=0, font='40', command=k116, activebackground=wh)
-        min4.place(x=662, y=223)
-        lc13 = Label(vit, text='165p.', bg=wh)
-        lc13.place(x=90, y=214)
-        lc14 = Label(vit, text='749p.', bg=wh)
-        lc14.place(x=284, y=214)
-        lc15 = Label(vit, text='1499p.', bg=wh)
-        lc15.place(x=478, y=214)
-        lc16 = Label(vit, text='659p.', bg=wh)
-        lc16.place(x=672, y=214)
         vit.grab_set()
         vit.mainloop()
     global bz2
@@ -923,9 +616,15 @@ iw4 = PhotoImage(file='w4.png')
 iw3 = PhotoImage(file='w3.png')
 iw2 = PhotoImage(file='w2.png')
 iw1 = PhotoImage(file='korz.png')
-ivit = PhotoImage(file='vitl.png')
-izam = PhotoImage(file='zam1.png')
-itof = PhotoImage(file='tof1.png')
+ivp = PhotoImage(file='О фильме Винни Пух.png')
+isuperp = PhotoImage(file='О фильме Суперпташки.png')
+isudn = PhotoImage(file='О фильме Судная ночь.png')
+inez = PhotoImage(file='О фильме Незнакомцы.png')
+iadel = PhotoImage(file='О фильме Асфальтовые джунгли.png')
+isltn = PhotoImage(file='О фильме сто лет тому вперед.png')
+ivit = PhotoImage(file='О фильме пушистый вояж.png')
+izam = PhotoImage(file='о фильме планета обезьян.png')
+itof = PhotoImage(file='О фильме мин неджентельменских дел.png')
 isn = PhotoImage(file='О фильме Гром.png')
 korzina = PhotoImage(file='korz.png')
 d = PhotoImage(file='zak.png')
@@ -933,19 +632,19 @@ l1 = Label(m, image=m1)
 l1.place(x=-2, y=0)
 
 
-bw1 = Button(m, bg=gr, borderwidth=0, height=1, width=20, text='Фильмы', fg=wh, font=f, activebackground=dgr,
+bw1 = Button(m, bg=gr, borderwidth=0, height=1, width=20, text='ФИЛЬМЫ', fg=wh, font=f, activebackground=dgr,
              activeforeground=wh, command=b1)
 bw1.place(x=30, y=97)
 bw1.bind('<Enter>', fb1)
 bw1.bind('<Leave>', fb1l)
 
-bw2 = Button(m, bg=gr, borderwidth=0, height=1, width=20, text='Расписание', fg=wh, font=f, activebackground=dgr,
+bw2 = Button(m, bg=gr, borderwidth=0, height=1, width=20, text='РАСПИСАНИЕ', fg=wh, font=f, activebackground=dgr,
              activeforeground=wh, command=b2)
 bw2.place(x=230, y=97)
 bw2.bind('<Enter>', fb2)
 bw2.bind('<Leave>', fb2l)
 
-bw3 = Button(m, bg=gr, borderwidth=0, height=1, width=10, text='Контакты', fg=wh, font=f, activebackground=dgr,
+bw3 = Button(m, bg=gr, borderwidth=0, height=1, width=10, text='КОНТАКТЫ', fg=wh, font=f, activebackground=dgr,
              activeforeground=wh, command=b3)
 bw3.place(x=430, y=97)
 bw3.bind('<Enter>', fb3)
