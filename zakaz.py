@@ -108,7 +108,7 @@ ________________________________________________________________________'''
         wk = Toplevel()
         wk.resizable(False, False)
         wk.geometry('400x600+200+50')
-        wk.iconbitmap('ic.ico')
+        wk.iconbitmap('icon.ico')
         wk.title('Корзина')
         lk = Label(wk, image=korzina)
         lk.place(x=-2, y=-2)
@@ -150,7 +150,7 @@ ________________________________________________________________________'''
             korz.configure(bg='#93F9B9')
         vit = Toplevel(w1)
         vit.title('О ФИЛЬМЕ ПУШИСТЫЙ ВОЯЖ')
-        vit.iconbitmap('ic.ico')
+        vit.iconbitmap('icon.ico')
         vit.geometry('834x400')
         vit.resizable(False, False)
         lv = Label(vit, image=ivit)
@@ -170,7 +170,7 @@ ________________________________________________________________________'''
             korz.configure(bg='#93F9B9')
         sltn = Toplevel(w1)
         sltn.title('О ФИЛЬМЕ СТО ЛЕТ ТОМУ ВПЕРЕД')
-        sltn.iconbitmap('ic.ico')
+        sltn.iconbitmap('icon.ico')
         sltn.geometry('834x400')
         sltn.resizable(False, False)
         lv = Label(sltn, image=isltn)
@@ -191,7 +191,7 @@ ________________________________________________________________________'''
 
         superp = Toplevel(w1)
         superp.title('О ФИЛЬМЕ СУПЕРПТАШКИ')
-        superp.iconbitmap('ic.ico')
+        superp.iconbitmap('icon.ico')
         superp.geometry('834x400')
         superp.resizable(False, False)
         lv = Label(superp, image=isuperp)
@@ -212,7 +212,7 @@ ________________________________________________________________________'''
 
         adel = Toplevel(w1)
         adel.title('О ФИЛЬМЕ АСФАЛЬТОВЫЕ ДЖУНГЛИ')
-        adel.iconbitmap('ic.ico')
+        adel.iconbitmap('icon.ico')
         adel.geometry('834x400')
         adel.resizable(False, False)
         lv = Label(adel, image=iadel)
@@ -234,7 +234,7 @@ ________________________________________________________________________'''
 
         nez = Toplevel(w1)
         nez.title('О ФИЛЬМЕ НЕЗНАКОМЦЫ')
-        nez.iconbitmap('ic.ico')
+        nez.iconbitmap('icon.ico')
         nez.geometry('834x400')
         nez.resizable(False, False)
         lv = Label(nez, image=inez)
@@ -255,7 +255,7 @@ ________________________________________________________________________'''
 
         vp = Toplevel(w1)
         vp.title('О ФИЛЬМЕ ВИННИ ПУХ')
-        vp.iconbitmap('ic.ico')
+        vp.iconbitmap('icon.ico')
         vp.geometry('834x400')
         vp.resizable(False, False)
         lv = Label(vp, image=ivp)
@@ -276,7 +276,7 @@ ________________________________________________________________________'''
 
         sudn = Toplevel(w1)
         sudn.title('О ФИЛЬМЕ СУДНАЯ НОЧЬ')
-        sudn.iconbitmap('ic.ico')
+        sudn.iconbitmap('icon.ico')
         sudn.geometry('834x400')
         sudn.resizable(False, False)
         lv = Label(sudn, image=isudn)
@@ -296,7 +296,7 @@ ________________________________________________________________________'''
             korz.configure(bg='#93F9B9')
         zam = Toplevel(w1)
         zam.title('О ФИЛЬМЕ ПЛАНЕТА ОБЕЗЬЯН')
-        zam.iconbitmap('ic.ico')
+        zam.iconbitmap('icon.ico')
         zam.geometry('834x400')
         zam.resizable(False, False)
         lz = Label(zam, image=izam)
@@ -311,7 +311,7 @@ ________________________________________________________________________'''
     def tof1():
         tof = Toplevel(w1)
         tof.title('О ФИЛЬМЕ МИНЕСТЕРСТВО НЕДЖЕНТЕЛЬМЕНСКИХ ДЕЛ')
-        tof.iconbitmap('ic.ico')
+        tof.iconbitmap('icon.ico')
         tof.geometry('834x400')
         tof.resizable(False, False)
         lt = Label(tof, image=itof)
@@ -333,7 +333,7 @@ ________________________________________________________________________'''
 
         sn = Toplevel(w1)
         sn.title('О ФИЛЬМЕ МАЙОР ГРОМ')
-        sn.iconbitmap('ic.ico')
+        sn.iconbitmap('icon.ico')
         sn.geometry('834x400')
 
         sn.resizable(False, False)
@@ -356,7 +356,7 @@ ________________________________________________________________________'''
 
     w1 = Toplevel(m)
     w1.configure(bg=wh)
-    w1.iconbitmap('ic.ico')
+    w1.iconbitmap('icon.ico')
     w1.geometry('834x600+200+50')
     w1.resizable(False, False)
     lw1 = Label(w1, image=iw1)
@@ -518,7 +518,7 @@ ________________________________________________________________________'''
             wk = Toplevel()
             wk.resizable(False, False)
             wk.geometry('400x600+200+50')
-            wk.iconbitmap('ic.ico')
+            wk.iconbitmap('icon.ico')
             wk.title('Корзина')
             lk = Label(wk, image=korzina)
             lk.place(x=-2, y=-2)
@@ -559,7 +559,7 @@ ________________________________________________________________________'''
 
         vit = Toplevel(w2)
         vit.title('Расписание')
-        vit.iconbitmap('ic.ico')
+        vit.iconbitmap('icon.ico')
         vit.geometry('834x300+200+50')
         vit.resizable(False, False)
         lv = Label(vit, image=ivit)
@@ -573,7 +573,7 @@ ________________________________________________________________________'''
         vit.mainloop()
     global bz2
     w2 = Toplevel(m)
-    w2.iconbitmap('ic.ico')
+    w2.iconbitmap('icon.ico')
     w2.title('Витамины')
     w2.resizable(False, False)
     w2.geometry('800x330+200+50')
@@ -593,7 +593,7 @@ ________________________________________________________________________'''
 def b4():
     w4 = Toplevel(m)
     w4.title('О нас')
-    w4.iconbitmap('ic.ico')
+    w4.iconbitmap('icon.ico')
     w4.resizable(False, False)
     w4.geometry('800x535+200+50')
     lw4 = Label(w4, image=iw4)
@@ -605,7 +605,7 @@ def b4():
 def b3():
     w3 = Toplevel(m)
     w3.title('Расписание')
-    w3.iconbitmap('ic.ico')
+    w3.iconbitmap('icon.ico')
     w3.resizable(False, False)
     w3.geometry('800x501+200+50')
     lw3 = Label(w3, image=iw3)
@@ -615,27 +615,27 @@ def b3():
 
 
 def fb1(e):
-    bw1.configure(bg=dgr)
+    bw1.configure(fg=purple)
 
 
 def fb1l(e):
-    bw1.configure(bg=gr)
+    bw1.configure(fg=black)
 
 
 def fb2(e):
-    bw2.configure(bg=dgr)
+    bw2.configure(fg=purple)
 
 
 def fb2l(e):
-    bw2.configure(bg=gr)
+    bw2.configure(fg=black)
 
 
 def fb3(e):
-    bw3.configure(bg=dgr)
+    bw3.configure(fg=purple)
 
 
 def fb3l(e):
-    bw3.configure(bg=gr)
+    bw3.configure(fg=black)
 
 def fs(e):
     bs.configure(bg=dgr)
@@ -645,16 +645,18 @@ def fsl(e):
     bs.configure(bg=gr)
 
 
-k = 0
-f = ('Inter', '12')
+f = 'Helvetica 18 bold'
+purple = '#A65897'
 gr = '#54C590'
 dgr = '#1F855C'
 wh = 'white'
 wh1 = 'white'
-wh2 = 'black'
+black= 'black'
 ser = '#343434'
 ls = '#4D5257'
+red= '#f32d00'
 g = list()
+gray = 'gray'
 c1 = 0
 c2 = 0
 c3 = 0
@@ -677,7 +679,7 @@ m = Tk()
 m.geometry('800x600+200+50')
 m.title('ПРЕМЬЕР ЗАЛ')
 m.resizable(False, False)
-m.iconbitmap('ic.ico')
+m.iconbitmap('icon.ico')
 m1 = PhotoImage(file='main1.png')
 m2 = PhotoImage(file='main2.png')
 m3 = PhotoImage(file='main3.png')
@@ -702,30 +704,31 @@ l1 = Label(m, image=m1)
 l1.place(x=-2, y=0)
 
 
-bw1 = Button(m, bg=gr, borderwidth=0, height=1, width=20, text='ФИЛЬМЫ', fg=wh, font=f, activebackground=dgr,
-             activeforeground=wh, command=b1)
-bw1.place(x=30, y=97)
+bw1 = Button(m, bg=wh, borderwidth=0, height=1, width=15, text='ФИЛЬМЫ', fg=black, font=f, activebackground=wh,
+             activeforeground=black, command=b1)
+bw1.place(x=170, y=20)
 bw1.bind('<Enter>', fb1)
 bw1.bind('<Leave>', fb1l)
 
-bw2 = Button(m, bg=gr, borderwidth=0, height=1, width=20, text='РАСПИСАНИЕ', fg=wh, font=f, activebackground=dgr,
-             activeforeground=wh, command=b2)
-bw2.place(x=230, y=97)
+bw2 = Button(m, bg=wh, borderwidth=0, height=1, width=15, text='РАСПИСАНИЕ', fg=black, font=f, activebackground=wh,
+             activeforeground=black, command=b2)
+bw2.place(x=350, y=20)
 bw2.bind('<Enter>', fb2)
 bw2.bind('<Leave>', fb2l)
 
-bw3 = Button(m, bg=gr, borderwidth=0, height=1, width=10, text='КОНТАКТЫ', fg=wh, font=f, activebackground=dgr,
-             activeforeground=wh, command=b3)
-bw3.place(x=430, y=97)
+bw3 = Button(m, bg=wh, borderwidth=0, height=1, width=10, text='КОНТАКТЫ', fg=black, font=f, activebackground=wh,
+             activeforeground=black, command=b3)
+bw3.place(x=570, y=20)
+
 bw3.bind('<Enter>', fb3)
 bw3.bind('<Leave>', fb3l)
 
 br1 = ImageTk.PhotoImage(file='r.png')
-br = Button(m, image=br1, borderwidth=0, command=r)
-br.place(x=689, y=205)
+br = Button(m, image=br1, borderwidth= 0,highlightthickness=0, command=r, activebackground=red)
+br.place(x=770, y=250)
 bl1 = PhotoImage(file='l.png')
-bl = Button(m, image=bl1, borderwidth=0, command=l)
-bl.place(x=55, y=205)
+bl = Button(m, image=bl1, borderwidth= 0,highlightthickness=0, command=l,activebackground=red)
+bl.place(x=5, y=250)
 
 photos = [ImageTk.PhotoImage(Image.open(f"main{i}.png").resize((800, 600))) for i in range(1, 4)]
 photo_iterator = itertools.cycle(photos)
