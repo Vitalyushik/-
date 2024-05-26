@@ -1,6 +1,8 @@
 from tkinter import *
 from random import *
 from datetime import datetime
+from tkinter import font
+
 from PIL import ImageTk, Image
 import itertools
 
@@ -644,9 +646,17 @@ def fs(e):
 def fsl(e):
     bs.configure(bg=gr)
 
+def fbre(e):
+    br.place(x=1232,y=382)
+def fbrl(e):
+    br.place(x=1230,y=380)
+def fble(e):
+    bl.place(x=10, y=382)
+def fbll(e):
+    bl.place(x=8, y=380)
 
-f = 'Helvetica 18 bold'
-purple = '#A65897'
+
+purple = '#951b81'
 gr = '#54C590'
 dgr = '#1F855C'
 wh = 'white'
@@ -654,7 +664,7 @@ wh1 = 'white'
 black= 'black'
 ser = '#343434'
 ls = '#4D5257'
-red= '#f32d00'
+red= '#fb3100'
 g = list()
 gray = 'gray'
 c1 = 0
@@ -676,7 +686,7 @@ c16 = 0
 
 
 m = Tk()
-m.geometry('800x600+200+50')
+m.geometry('1280x800')
 m.title('ПРЕМЬЕР ЗАЛ')
 m.resizable(False, False)
 m.iconbitmap('icon.ico')
@@ -703,34 +713,38 @@ d = PhotoImage(file='zak.png')
 l1 = Label(m, image=m1)
 l1.place(x=-2, y=0)
 
-
-bw1 = Button(m, bg=wh, borderwidth=0, height=1, width=15, text='ФИЛЬМЫ', fg=black, font=f, activebackground=wh,
+f = font.Font(family="Rostov", size=30, weight="bold")
+f.actual()
+bw1 = Button(m, bg=wh, borderwidth=0, height=1, width=10, text='ФИЛЬМЫ', fg=black, font=f, activebackground=wh,
              activeforeground=black, command=b1)
-bw1.place(x=170, y=20)
+bw1.place(x=300, y=23)
 bw1.bind('<Enter>', fb1)
 bw1.bind('<Leave>', fb1l)
 
-bw2 = Button(m, bg=wh, borderwidth=0, height=1, width=15, text='РАСПИСАНИЕ', fg=black, font=f, activebackground=wh,
+bw2 = Button(m, bg=wh, borderwidth=0, height=1, width=12, text='РАСПИСАНИЕ', fg=black, font=f, activebackground=wh,
              activeforeground=black, command=b2)
-bw2.place(x=350, y=20)
+bw2.place(x=550, y=23)
 bw2.bind('<Enter>', fb2)
 bw2.bind('<Leave>', fb2l)
 
 bw3 = Button(m, bg=wh, borderwidth=0, height=1, width=10, text='КОНТАКТЫ', fg=black, font=f, activebackground=wh,
              activeforeground=black, command=b3)
-bw3.place(x=570, y=20)
+bw3.place(x=865, y=23)
 
 bw3.bind('<Enter>', fb3)
 bw3.bind('<Leave>', fb3l)
 
-br1 = ImageTk.PhotoImage(file='r.png')
-br = Button(m, image=br1, borderwidth= 0,highlightthickness=0, command=r, activebackground=red)
-br.place(x=770, y=250)
-bl1 = PhotoImage(file='l.png')
-bl = Button(m, image=bl1, borderwidth= 0,highlightthickness=0, command=l,activebackground=red)
-bl.place(x=5, y=250)
-
-photos = [ImageTk.PhotoImage(Image.open(f"main{i}.png").resize((800, 600))) for i in range(1, 4)]
+br1 = ImageTk.PhotoImage(Image.open('r.png').resize((45,60)))
+br = Button(m, image=br1,bg=red, borderwidth= 0,highlightthickness=0, command=r, activebackground=red)
+br.place(x=1230, y=380)
+br.bind('<Enter>', fbre)
+br.bind('<Leave>', fbrl)
+bl1 = ImageTk.PhotoImage(Image.open('l.png').resize((45,60)))
+bl = Button(m, image=bl1,bg=red, borderwidth= 0,highlightthickness=0, command=l,activebackground=red)
+bl.place(x=8, y=380)
+bl.bind('<Enter>', fble)
+bl.bind('<Leave>', fbll)
+photos = [ImageTk.PhotoImage(Image.open(f"main{i}.png").resize((1280, 960))) for i in range(1, 4)]
 photo_iterator = itertools.cycle(photos)
 
 def update_photo():
