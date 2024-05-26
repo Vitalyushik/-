@@ -754,8 +754,6 @@ def fble(e):
     bl.place(x=10, y=382)
 def fbll(e):
     bl.place(x=8, y=380)
-
-
 purple = '#951b81'
 gr = '#54C590'
 dgr = '#1F855C'
@@ -786,7 +784,9 @@ c16 = 0
 
 
 m = Tk()
+
 m.geometry('1280x960')
+
 m.title('ПРЕМЬЕР ЗАЛ')
 m.resizable(False, False)
 m.iconbitmap('icon.ico')
