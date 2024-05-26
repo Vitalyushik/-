@@ -1,6 +1,8 @@
 from tkinter import *
 from random import *
 from datetime import datetime
+from tkinter import font
+
 from PIL import ImageTk, Image
 import itertools
 
@@ -153,6 +155,21 @@ ________________________________________________________________________'''
         lv.pack(anchor=W)
         label_text = Label(vit, text="О ФИЛЬМЕ ПУШИСТЫЙ ВОЯЖ", font=("Helvetica", 32))
         label_text.place(x=264, y=120)
+        label_text0 = Label(vit, text="1 час 33 минуты Мультфильм, комедия, приключения 6+", font=("Helvetica", 16))
+        label_text0.place(x=220, y=240)
+        label_text2 = Label(vit, text="Страна: США, Канада", font=("Helvetica", 16))
+        label_text2.place(x=220, y=290)
+        label_text3 = Label(vit, text="Режиссер: Кевин Донован, Готтфрид Рудт", font=("Helvetica", 16))
+        label_text3.place(x=220, y=340)
+        label_text4 = Label(vit, text="Актеры: Билл Найи, Брук Шилдс, Дэнни Трехо",
+                            font=("Helvetica", 16), justify='left')
+        label_text4.place(x=220, y=390)
+        label_text1 = Label(vit, text="Во время переезда двое домашних любимцев, Педро и Грейси, теряют своих хозяев."
+                                      "\nОказавшись в пугающем и неизвестном мире, они пытаются воссоединиться с семьей."
+                                      "\nНа пути их ждет множество приключений и опасностей, справиться с которыми можно,"
+                                      "\nтолько действуя сообща.Смогут ли они разрешить свои разногласия и вернуться домой?",
+                            font=("Helvetica", 16), justify='left')
+        label_text1.place(x=220, y=440)
 
         vit.grab_set()
         vit.mainloop()
@@ -168,6 +185,25 @@ ________________________________________________________________________'''
         lv.pack(anchor=W)
         label_text = Label(sltn, text="О ФИЛЬМЕ СТО ЛЕТ ТОМУ ВПЕРЕД", font=("Helvetica", 32))
         label_text.place(x=264, y=120)
+        label_text0 = Label(sltn, text="2 часа 35 минут Приключения, экшн 6+", font=("Helvetica", 16))
+        label_text0.place(x=220, y=240)
+        label_text2 = Label(sltn, text="Страна: Россия", font=("Helvetica", 16))
+        label_text2.place(x=220, y=290)
+        label_text3 = Label(sltn, text="Режиссер: Александр Андрющенко", font=("Helvetica", 16))
+        label_text3.place(x=220, y=340)
+        label_text4 = Label(sltn, text="Актеры: Даша Верещагина, Марк Эйдельштейн, Александр Петров, Юра Борисов, "
+                                         "\nВиктория Исакова, Константин Хабенский, Федор Бондарчук, Софа Цибирева",
+                            font=("Helvetica", 16), justify='left')
+        label_text4.place(x=220, y=390)
+        label_text1 = Label(sltn, text="Они живут в разных мирах. Коля Герасимов — в сегодняшней Москве, Алиса"
+                                       "\nСелезнева — на сто лет позже. Коля – обычный парень, ему нет дела до"
+                                       "\nбудущего. Алису не отпускает прошлое: она должна найти маму, которую"
+                                       "\nпотеряла, когда была совсем ребенком. Встреча Алисы и Коли станет началом"
+                                       "\nневероятных приключений, в которых нашим героям предстоит отвоевать у"
+                                       "\nкосмических пиратов Вселенную, восстановить ход времени и обрести самое"
+                                       "\nдорогое: любовь и дружбу.",
+                            font=("Helvetica", 16), justify='left')
+        label_text1.place(x=220, y=470)
 
         sltn.grab_set()
         sltn.mainloop()
@@ -183,6 +219,20 @@ ________________________________________________________________________'''
         lv.pack(anchor=W)
         label_text = Label(superp, text="О ФИЛЬМЕ СУПЕРПТАШКИ", font=("Helvetica", 32))
         label_text.place(x=264, y=120)
+        label_text0 = Label(superp, text="1 час 31 минута Анимация 0+", font=("Helvetica", 16))
+        label_text0.place(x=220, y=240)
+        label_text2 = Label(superp, text="Страна: Италия, Испания", font=("Helvetica", 16))
+        label_text2.place(x=220, y=290)
+        label_text3 = Label(superp, text="Режиссер: Нестор Ф. Деннис", font=("Helvetica", 16))
+        label_text3.place(x=220, y=340)
+        label_text4 = Label(superp, text="Актеры: Тай Шеридан, Шон Пенн, Гбенга Акиннагбе",
+                            font=("Helvetica", 16), justify='left')
+        label_text4.place(x=220, y=390)
+        label_text1 = Label(superp, text="Птичка Джонни и его пернатые друзья обладают суперспособностями. Однажды"
+                                       "\nони отправляются на секретную миссию, в ходе которой им предстоит спасти"
+                                       "\nродной город от коварных планов злодея Отто фон Моржа.",
+                            font=("Helvetica", 16), justify='left')
+        label_text1.place(x=220, y=440)
 
         superp.grab_set()
         superp.mainloop()
@@ -198,6 +248,21 @@ ________________________________________________________________________'''
         lv.pack(anchor=W)
         label_text = Label(adel, text="О ФИЛЬМЕ АСФАЛЬТОВЫЕ ДЖУНГЛИ", font=("Helvetica", 32))
         label_text.place(x=264, y=120)
+        label_text0 = Label(adel, text="2 часа 5 минут Триллер, драма 18+", font=("Helvetica", 16))
+        label_text0.place(x=220, y=240)
+        label_text2 = Label(adel, text="Страна: США", font=("Helvetica", 16))
+        label_text2.place(x=220, y=290)
+        label_text3 = Label(adel, text="Режиссер: Жан-Стефан Совер", font=("Helvetica", 16))
+        label_text3.place(x=220, y=340)
+        label_text4 = Label(adel, text="Актеры: Тай Шеридан, Шон Пенн, Гбенга Акиннагбе",
+                            font=("Helvetica", 16), justify='left')
+        label_text4.place(x=220, y=390)
+        label_text1 = Label(adel, text="Это история врача и его первого года на работе в середине 90-х в Гарлеме."
+                                      "\nЭто взгляд изнутри на уличную жизнь: перестрелки, плохие копы, безнадежные"
+                                      "\nпациенты, черный юмор в странных обстоятельствах и попытка одного медика"
+                                      "\nсохранить свое желание помочь, несмотря на его растущую черствость.",
+                            font=("Helvetica", 16), justify='left')
+        label_text1.place(x=220, y=440)
 
         adel.grab_set()
         adel.mainloop()
@@ -214,6 +279,22 @@ ________________________________________________________________________'''
         lv.pack(anchor=W)
         label_text = Label(nez, text="О ФИЛЬМЕ НЕЗНАКОМЦЫ", font=("Helvetica", 32))
         label_text.place(x=264, y=120)
+        label_text0 = Label(nez, text="1 час 37 минут Хоррор-слэшер 18+", font=("Helvetica", 16))
+        label_text0.place(x=220, y=240)
+        label_text2 = Label(nez, text="Страна: США", font=("Helvetica", 16))
+        label_text2.place(x=220, y=290)
+        label_text3 = Label(nez, text="Режиссер: Ренни Харлин", font=("Helvetica", 16))
+        label_text3.place(x=220, y=340)
+        label_text4 = Label(nez, text="Актеры: Мэделин Петш, Гэбриел Бассо, Рэйчел Шентон, Ричард Брэйк",
+                            font=("Helvetica", 16), justify='left')
+        label_text4.place(x=220, y=390)
+        label_text1 = Label(nez, text="Майя и Райан решили отметить пятую годовщину, не подозревая, что она может стать"
+                                     "\nих последней. Путешествуя на своем пикапе через всю страну, они совершают"
+                                      "\nвынужденную остановку в маленьком городе, где местные жители, даже дети,"
+                                      "\nвстречают их с большим интересом. Оставаться в этом странном месте пара не хочет,"
+                                      "\nно вынуждена провести ночь в доме, куда вскоре нагрянут безумцы в кукольных масках.",
+                            font=("Helvetica", 16), justify='left')
+        label_text1.place(x=220, y=440)
 
         nez.grab_set()
         nez.mainloop()
@@ -229,6 +310,22 @@ ________________________________________________________________________'''
         lv.pack(anchor=W)
         label_text = Label(vp, text="О ФИЛЬМЕ ВИННИ ПУХ", font=("Helvetica", 32))
         label_text.place(x=264, y=120)
+        label_text0 = Label(vp, text="1 час 37 минут Ужасы, триллер 18+", font=("Helvetica", 16))
+        label_text0.place(x=220, y=240)
+        label_text2 = Label(vp, text="Страна: Великобритания", font=("Helvetica", 16))
+        label_text2.place(x=220, y=290)
+        label_text3 = Label(vp, text="Режиссер: Рис Фрейк-Уотерфилд", font=("Helvetica", 16))
+        label_text3.place(x=220, y=340)
+        label_text4 = Label(vp, text="Актеры: Скотт Чемберс, Таллула Эванс, Райан Олива, Тереза Бенхем",
+                            font=("Helvetica", 16), justify='left')
+        label_text4.place(x=220, y=390)
+        label_text1 = Label(vp, text="После событий первого фильма, Винни-Пух и Пятак больше не могут продолжать"
+                                       "\nохотиться в Стоакровомом лесу. Очередное предательство Кристофера Робина,"
+                                       "\nраскрывшего миру их существование, ставит под угрозу не только их дом, но и"
+                                     "\nжизни. Вот только звери больше не намерены прятаться в тени и вместе c друзьями"
+                                     "\nСовенком и Тигрой, отправляются в город, чтобы навести в нем свои кровавые порядки.",
+                            font=("Helvetica", 16), justify='left')
+        label_text1.place(x=220, y=440)
 
         vp.grab_set()
         vp.mainloop()
@@ -244,6 +341,19 @@ ________________________________________________________________________'''
         lv.pack(anchor=W)
         label_text = Label(sudn, text="О ФИЛЬМЕ СУДНАЯ НОЧЬ", font=("Helvetica", 32))
         label_text.place(x=264, y=120)
+        label_text0 = Label(sudn, text="1 час 34 минуты Криминал, триллер 18+", font=("Helvetica", 16))
+        label_text0.place(x=220, y=240)
+        label_text2 = Label(sudn, text="Страна: США", font=("Helvetica", 16))
+        label_text2.place(x=220, y=290)
+        label_text3 = Label(sudn, text="Режиссер: Дэн Браун", font=("Helvetica", 16))
+        label_text3.place(x=220, y=340)
+        label_text4 = Label(sudn, text="Актеры: Ангус Клауд, Эллиот Найт, Джессика Гарза",
+                            font=("Helvetica", 16), justify='left')
+        label_text4.place(x=220, y=390)
+        label_text1 = Label(sudn, text="Несколько человек становятся свидетелями джекпота в $156 миллионов долларов."
+                                       "\nСлучайные посетители, полиция, преступники - все желают заполучить лотерейный"
+                                       "\nбилет с огромным выигрышем. Эта судная ночь выпустит на волю все людские пороки.", font=("Helvetica", 16), justify='left')
+        label_text1.place(x=220, y=440)
 
         sudn.grab_set()
         sudn.mainloop()
@@ -259,6 +369,22 @@ ________________________________________________________________________'''
         lz.pack(anchor=W)
         label_text = Label(zam, text="О ФИЛЬМЕ ПЛАНЕТА ОБЕЗЬЯН", font=("Helvetica", 32))
         label_text.place(x=264, y=120)
+        label_text0 = Label(zam, text="2 часа 30 минут Фантастика, боевик, приключения 16+", font=("Helvetica", 16))
+        label_text0.place(x=220, y=240)
+        label_text2 = Label(zam, text="Страна: США", font=("Helvetica", 16))
+        label_text2.place(x=220, y=290)
+        label_text3 = Label(zam, text="Режиссер: Уэс Болл", font=("Helvetica", 16))
+        label_text3.place(x=220, y=340)
+        label_text4 = Label(zam, text="Актеры: Оуэн Тиг, Питер Макон, Фрейя Аллан",
+                            font=("Helvetica", 16), justify='left')
+        label_text4.place(x=220, y=390)
+        label_text1 = Label(zam, text="Несколько поколений после правления Цезаря. Обезьяны являются доминирующим"
+                                      "\nвидом, живущим в гармонии, а люди вынуждены оставаться в тени. Пока новый"
+                                      "\nтиранический nлидер обезьян строит свою империю, один молодой шимпанзе "
+                                      "\nотправляется в путешествие, которое заставит его усомниться во всём, что"
+                                      "\nон знал о прошлом, и сделать выбор, который определит будущее как обезьян,"
+                                      "\nтак и людей.", font=("Helvetica", 16), justify='left')
+        label_text1.place(x=220, y=440)
 
         zam.grab_set()
         zam.mainloop()
@@ -273,6 +399,21 @@ ________________________________________________________________________'''
         lt.pack(anchor=W)
         label_text = Label(tof, text="О ФИЛЬМЕ МИНЕСТЕРСТВО \nНЕДЖЕНТЕЛЬМЕНСКИХ ДЕЛ", font=("Helvetica", 32))
         label_text.place(x=264, y=120)
+        label_text0 = Label(tof, text="2 часа 7 минут Комедийный экшн 18+", font=("Helvetica", 16))
+        label_text0.place(x=220, y=270)
+        label_text2 = Label(tof, text="Страна: США, Великобритания", font=("Helvetica", 16))
+        label_text2.place(x=220, y=320)
+        label_text3 = Label(tof, text="Режиссер: Гай Ричи", font=("Helvetica", 16))
+        label_text3.place(x=220, y=370)
+        label_text4 = Label(tof, text="Актеры: Генри Кавилл, Эйса Гонсалес, Алан Ричсон, Алекс Петтифер",
+                            font=("Helvetica", 16), justify='left')
+        label_text4.place(x=220, y=420)
+        label_text1 = Label(tof, text="Они — лучшие из лучших. Отпетые авантюристы и первоклассные спецы,привыкшие"
+                                     "\nдействовать в одиночку. Но когда на кону стоит судьба всего мира, им "
+                                     "\nприходится объединиться в сверхсекретное боевое подразделение и отправиться"
+                                     "\nна дерзкую миссию против нацистов. Теперь их дело — война, и вести они её "
+                                     "\nбудут совершенно не по-джентльменски.", font=("Helvetica", 16), justify='left')
+        label_text1.place(x=220, y=470)
         tof.grab_set()
         tof.mainloop()
 
@@ -288,6 +429,27 @@ ________________________________________________________________________'''
         ls5.pack(anchor=W)
         label_text = Label(sn, text="О ФИЛЬМЕ МАЙОР ГРОМ", font=("Helvetica", 32))
         label_text.place(x=264, y=120)
+        label_text0 = Label(sn, text="3 часа Приключения, экшн 16+", font=("Helvetica", 16))
+        label_text0.place(x=220, y=220)
+        label_text2 = Label(sn, text="Страна: Россия", font=("Helvetica", 16))
+        label_text2.place(x=220, y=270)
+        label_text3 = Label(sn, text="Режиссер: Олег Трофим", font=("Helvetica", 16))
+        label_text3.place(x=220, y=320)
+        label_text4 = Label(sn, text="Актеры: Тихон Жизневский, Александр Сетейкин, Алексей Маклаков, Любовь Аксенова,"
+                                     "\n Сергей Горошко, Константин Хабенский, Матвей Лыков, Ольга Сутулова",
+                            font=("Helvetica", 16), justify='left')
+        label_text4.place(x=220, y=370)
+        label_text1 = Label(sn, text="Сюжет «Игры» разворачивается спустя год после того, как майор Гром поймал"
+                                      "\n Чумного Доктора. Санкт-Петербург оправился от потрясений, Сергей Разумовский"
+                                      "\nоказался в психиатрической лечебнице, а Игорь Гром стал главной знаменитостью"
+                                      "\nв городе. Жизнь майора Грома идеальна: днем он ловит преступников вместе с "
+                                      "\nнапарником Димой Дубиным, а вечера проводит в компании журналистки Юлии "
+                                      "\nПчёлкиной. Полную идиллию прерывает появление в городе таинственного злодея,"
+                                      "\nназывающего себя Призраком. Он предлагает Грому сыграть в опасную игру, ставка"
+                                      "\n в которой — жизни обычных людей.", font=("Helvetica", 16), justify='left')
+        label_text1.place(x=220, y=440)
+
+
 
         sn.grab_set()
         sn.mainloop()
@@ -584,9 +746,17 @@ def fs(e):
 def fsl(e):
     bs.configure(bg=gr)
 
+def fbre(e):
+    br.place(x=1232,y=382)
+def fbrl(e):
+    br.place(x=1230,y=380)
+def fble(e):
+    bl.place(x=10, y=382)
+def fbll(e):
+    bl.place(x=8, y=380)
 
-f = 'Helvetica 18 bold'
-purple = '#A65897'
+
+purple = '#951b81'
 gr = '#54C590'
 dgr = '#1F855C'
 wh = 'white'
@@ -594,7 +764,7 @@ wh1 = 'white'
 black= 'black'
 ser = '#343434'
 ls = '#4D5257'
-red= '#f32d00'
+red= '#fb3100'
 g = list()
 gray = 'gray'
 c1 = 0
@@ -616,7 +786,7 @@ c16 = 0
 
 
 m = Tk()
-m.geometry('800x600+200+50')
+m.geometry('1280x960')
 m.title('ПРЕМЬЕР ЗАЛ')
 m.resizable(False, False)
 m.iconbitmap('icon.ico')
@@ -633,34 +803,38 @@ d = PhotoImage(file='zak.png')
 l1 = Label(m, image=m1)
 l1.place(x=-2, y=0)
 
-
-bw1 = Button(m, bg=wh, borderwidth=0, height=1, width=15, text='ФИЛЬМЫ', fg=black, font=f, activebackground=wh,
+f = font.Font(family="Rostov", size=30, weight="bold")
+f.actual()
+bw1 = Button(m, bg=wh, borderwidth=0, height=1, width=10, text='ФИЛЬМЫ', fg=black, font=f, activebackground=wh,
              activeforeground=black, command=b1)
-bw1.place(x=170, y=20)
+bw1.place(x=300, y=23)
 bw1.bind('<Enter>', fb1)
 bw1.bind('<Leave>', fb1l)
 
-bw2 = Button(m, bg=wh, borderwidth=0, height=1, width=15, text='РАСПИСАНИЕ', fg=black, font=f, activebackground=wh,
+bw2 = Button(m, bg=wh, borderwidth=0, height=1, width=12, text='РАСПИСАНИЕ', fg=black, font=f, activebackground=wh,
              activeforeground=black, command=b2)
-bw2.place(x=350, y=20)
+bw2.place(x=550, y=23)
 bw2.bind('<Enter>', fb2)
 bw2.bind('<Leave>', fb2l)
 
 bw3 = Button(m, bg=wh, borderwidth=0, height=1, width=10, text='КОНТАКТЫ', fg=black, font=f, activebackground=wh,
              activeforeground=black, command=b3)
-bw3.place(x=570, y=20)
+bw3.place(x=865, y=23)
 
 bw3.bind('<Enter>', fb3)
 bw3.bind('<Leave>', fb3l)
 
-br1 = ImageTk.PhotoImage(file='r.png')
-br = Button(m, image=br1, borderwidth= 0,highlightthickness=0, command=r, activebackground=red)
-br.place(x=770, y=250)
-bl1 = PhotoImage(file='l.png')
-bl = Button(m, image=bl1, borderwidth= 0,highlightthickness=0, command=l,activebackground=red)
-bl.place(x=5, y=250)
-
-photos = [ImageTk.PhotoImage(Image.open(f"main{i}.png").resize((800, 600))) for i in range(1, 4)]
+br1 = ImageTk.PhotoImage(Image.open('r.png').resize((45,60)))
+br = Button(m, image=br1,bg=red, borderwidth= 0,highlightthickness=0, command=r, activebackground=red)
+br.place(x=1230, y=380)
+br.bind('<Enter>', fbre)
+br.bind('<Leave>', fbrl)
+bl1 = ImageTk.PhotoImage(Image.open('l.png').resize((45,60)))
+bl = Button(m, image=bl1,bg=red, borderwidth= 0,highlightthickness=0, command=l,activebackground=red)
+bl.place(x=8, y=380)
+bl.bind('<Enter>', fble)
+bl.bind('<Leave>', fbll)
+photos = [ImageTk.PhotoImage(Image.open(f"main{i}.png").resize((1280, 960))) for i in range(1, 4)]
 photo_iterator = itertools.cycle(photos)
 
 def update_photo():
