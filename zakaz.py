@@ -145,168 +145,123 @@ ________________________________________________________________________'''
 
 #ФУНКЦИИ ВЫЗЫВАЮЩИЕ ОПИСАНИЕ КАЖДОГО ФИЛЬМА
     def vit():
-        def bk(e):
-            korz.configure(bg=dgr)
 
-        def bk1(e):
-            korz.configure(bg='#93F9B9')
         vit = Toplevel(w1)
         vit.title('О ФИЛЬМЕ ПУШИСТЫЙ ВОЯЖ')
         vit.iconbitmap('icon.ico')
-        vit.geometry('834x400')
+        vit.geometry('1280x960')
         vit.resizable(False, False)
-        lv = Label(vit, image=ivit)
+        lv = Label(vit, image=iw1)
         lv.pack(anchor=W)
-        korz = Button(vit, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
-        korz.place(x=802, y=0)
-        korz.bind('<Enter>', bk)
-        korz.bind('<Leave>', bk1)
+        label_text = Label(vit, text="О ФИЛЬМЕ ПУШИСТЫЙ ВОЯЖ", font=("Helvetica", 32))
+        label_text.place(x=264, y=120)
+
         vit.grab_set()
         vit.mainloop()
 
     def sltn():
-        def bk(e):
-            korz.configure(bg=dgr)
 
-        def bk1(e):
-            korz.configure(bg='#93F9B9')
         sltn = Toplevel(w1)
         sltn.title('О ФИЛЬМЕ СТО ЛЕТ ТОМУ ВПЕРЕД')
         sltn.iconbitmap('icon.ico')
-        sltn.geometry('834x400')
+        sltn.geometry('1280x960')
         sltn.resizable(False, False)
-        lv = Label(sltn, image=isltn)
+        lv = Label(sltn, image=iw1)
         lv.pack(anchor=W)
-        korz = Button(sltn, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
-        korz.place(x=802, y=0)
-        korz.bind('<Enter>', bk)
-        korz.bind('<Leave>', bk1)
+        label_text = Label(sltn, text="О ФИЛЬМЕ СТО ЛЕТ ТОМУ ВПЕРЕД", font=("Helvetica", 32))
+        label_text.place(x=264, y=120)
+
         sltn.grab_set()
         sltn.mainloop()
 
     def superp():
-        def bk(e):
-            korz.configure(bg=dgr)
-
-        def bk1(e):
-            korz.configure(bg='#93F9B9')
 
         superp = Toplevel(w1)
         superp.title('О ФИЛЬМЕ СУПЕРПТАШКИ')
         superp.iconbitmap('icon.ico')
-        superp.geometry('834x400')
+        superp.geometry('1280x960')
         superp.resizable(False, False)
-        lv = Label(superp, image=isuperp)
+        lv = Label(superp, image=iw1)
         lv.pack(anchor=W)
-        korz = Button(superp, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
-        korz.place(x=802, y=0)
-        korz.bind('<Enter>', bk)
-        korz.bind('<Leave>', bk1)
+        label_text = Label(superp, text="О ФИЛЬМЕ СУПЕРПТАШКИ", font=("Helvetica", 32))
+        label_text.place(x=264, y=120)
+
         superp.grab_set()
         superp.mainloop()
 
     def adel():
-        def bk(e):
-            korz.configure(bg=dgr)
-
-        def bk1(e):
-            korz.configure(bg='#93F9B9')
 
         adel = Toplevel(w1)
         adel.title('О ФИЛЬМЕ АСФАЛЬТОВЫЕ ДЖУНГЛИ')
         adel.iconbitmap('icon.ico')
-        adel.geometry('834x400')
+        adel.geometry('1280x960')
         adel.resizable(False, False)
-        lv = Label(adel, image=iadel)
+        lv = Label(adel, image=iw1)
         lv.pack(anchor=W)
-        korz = Button(adel, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
-        korz.place(x=802, y=0)
-        korz.bind('<Enter>', bk)
-        korz.bind('<Leave>', bk1)
+        label_text = Label(adel, text="О ФИЛЬМЕ АСФАЛЬТОВЫЕ ДЖУНГЛИ", font=("Helvetica", 32))
+        label_text.place(x=264, y=120)
+
         adel.grab_set()
         adel.mainloop()
 
 
     def nez():
-        def bk(e):
-            korz.configure(bg=dgr)
-
-        def bk1(e):
-            korz.configure(bg='#93F9B9')
 
         nez = Toplevel(w1)
         nez.title('О ФИЛЬМЕ НЕЗНАКОМЦЫ')
         nez.iconbitmap('icon.ico')
-        nez.geometry('834x400')
+        nez.geometry('1280x960')
         nez.resizable(False, False)
-        lv = Label(nez, image=inez)
+        lv = Label(nez, image=iw1)
         lv.pack(anchor=W)
-        korz = Button(nez, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
-        korz.place(x=802, y=0)
-        korz.bind('<Enter>', bk)
-        korz.bind('<Leave>', bk1)
+        label_text = Label(nez, text="О ФИЛЬМЕ НЕЗНАКОМЦЫ", font=("Helvetica", 32))
+        label_text.place(x=264, y=120)
+
         nez.grab_set()
         nez.mainloop()
 
     def vp():
-        def bk(e):
-            korz.configure(bg=dgr)
-
-        def bk1(e):
-            korz.configure(bg='#93F9B9')
 
         vp = Toplevel(w1)
         vp.title('О ФИЛЬМЕ ВИННИ ПУХ')
         vp.iconbitmap('icon.ico')
-        vp.geometry('834x400')
+        vp.geometry('1280x960')
         vp.resizable(False, False)
-        lv = Label(vp, image=ivp)
+        lv = Label(vp, image=iw1)
         lv.pack(anchor=W)
-        korz = Button(vp, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
-        korz.place(x=802, y=0)
-        korz.bind('<Enter>', bk)
-        korz.bind('<Leave>', bk1)
+        label_text = Label(vp, text="О ФИЛЬМЕ ВИННИ ПУХ", font=("Helvetica", 32))
+        label_text.place(x=264, y=120)
+
         vp.grab_set()
         vp.mainloop()
 
     def sudn():
-        def bk(e):
-            korz.configure(bg=dgr)
-
-        def bk1(e):
-            korz.configure(bg='#93F9B9')
 
         sudn = Toplevel(w1)
         sudn.title('О ФИЛЬМЕ СУДНАЯ НОЧЬ')
         sudn.iconbitmap('icon.ico')
-        sudn.geometry('834x400')
+        sudn.geometry('1280x960')
         sudn.resizable(False, False)
-        lv = Label(sudn, image=isudn)
+        lv = Label(sudn, image=iw1)
         lv.pack(anchor=W)
-        korz = Button(sudn, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
-        korz.place(x=802, y=0)
-        korz.bind('<Enter>', bk)
-        korz.bind('<Leave>', bk1)
+        label_text = Label(sudn, text="О ФИЛЬМЕ СУДНАЯ НОЧЬ", font=("Helvetica", 32))
+        label_text.place(x=264, y=120)
+
         sudn.grab_set()
         sudn.mainloop()
 
     def zam1():
-        def bk(e):
-            korz.configure(bg=dgr)
 
-        def bk1(e):
-            korz.configure(bg='#93F9B9')
         zam = Toplevel(w1)
         zam.title('О ФИЛЬМЕ ПЛАНЕТА ОБЕЗЬЯН')
         zam.iconbitmap('icon.ico')
-        zam.geometry('834x400')
+        zam.geometry('1280x960')
         zam.resizable(False, False)
-        lz = Label(zam, image=izam)
+        lz = Label(zam, image=iw1)
         lz.pack(anchor=W)
-        korz = Button(zam, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
-        korz.place(x=802, y=0)
-        korz.bind('<Enter>', bk)
-        korz.bind('<Leave>', bk1)
+        label_text = Label(zam, text="О ФИЛЬМЕ ПЛАНЕТА ОБЕЗЬЯН", font=("Helvetica", 32))
+        label_text.place(x=264, y=120)
+
         zam.grab_set()
         zam.mainloop()
 
@@ -314,47 +269,33 @@ ________________________________________________________________________'''
         tof = Toplevel(w1)
         tof.title('О ФИЛЬМЕ МИНЕСТЕРСТВО НЕДЖЕНТЕЛЬМЕНСКИХ ДЕЛ')
         tof.iconbitmap('icon.ico')
-        tof.geometry('834x400')
+        tof.geometry('1280x960')
         tof.resizable(False, False)
-        lt = Label(tof, image=itof)
+        lt = Label(tof, image=iw1)
         lt.pack(anchor=W)
-        korz = Button(tof, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
-        korz.place(x=802, y=0)
-        korz.bind('<Enter>', bk)
-        korz.bind('<Leave>', bk1)
+        label_text = Label(tof, text="О ФИЛЬМЕ МИНЕСТЕРСТВО \nНЕДЖЕНТЕЛЬМЕНСКИХ ДЕЛ", font=("Helvetica", 32))
+        label_text.place(x=264, y=120)
         tof.grab_set()
         tof.mainloop()
 
     def sn1():
 
-        def bk(e):
-            korz.configure(bg=dgr)
-
-        def bk1(e):
-            korz.configure(bg='#93F9B9')
-
         sn = Toplevel(w1)
         sn.title('О ФИЛЬМЕ МАЙОР ГРОМ')
         sn.iconbitmap('icon.ico')
-        sn.geometry('834x400')
+        sn.geometry('1280x960')
 
         sn.resizable(False, False)
-        ls5 = Label(sn, image=isn)
+        ls5 = Label(sn, image=iw1)
         ls5.pack(anchor=W)
-        korz = Button(sn, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
-        korz.place(x=802, y=0)
-        korz.bind('<Enter>', bk)
-        korz.bind('<Leave>', bk1)
+        label_text = Label(sn, text="О ФИЛЬМЕ МАЙОР ГРОМ", font=("Helvetica", 32))
+        label_text.place(x=264, y=120)
+
         sn.grab_set()
         sn.mainloop()
 
 
 #АФИША С ВЫБОРОМ ФИЛЬМА
-    def bk(e):
-        korz.configure(bg=dgr)
-
-    def bk1(e):
-        korz.configure(bg='#93F9B9')
 
     w1 = Toplevel(m)
     w1.configure(bg=wh)
@@ -697,16 +638,6 @@ iw4 = PhotoImage(file='w4.png')
 iw3 = PhotoImage(file='w3.png')
 iw2 = PhotoImage(file='w2.png')
 iw1 = PhotoImage(file='фон афиша.png')
-ivp = PhotoImage(file='О фильме Винни Пух.png')
-isuperp = PhotoImage(file='О фильме Суперпташки.png')
-isudn = PhotoImage(file='О фильме Судная ночь.png')
-inez = PhotoImage(file='О фильме Незнакомцы.png')
-iadel = PhotoImage(file='О фильме Асфальтовые джунгли.png')
-isltn = PhotoImage(file='О фильме сто лет тому вперед.png')
-ivit = PhotoImage(file='О фильме пушистый вояж.png')
-izam = PhotoImage(file='о фильме планета обезьян.png')
-itof = PhotoImage(file='О фильме мин неджентельменских дел.png')
-isn = PhotoImage(file='О фильме Гром.png')
 korzina = PhotoImage(file='korz.png')
 d = PhotoImage(file='zak.png')
 l1 = Label(m, image=m1)
