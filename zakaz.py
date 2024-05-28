@@ -1856,9 +1856,11 @@ def b2():
         button5_3_3.config(bg= g ,fg = purple)
 
     #КНОПКИ В РАСПИСАНИИ ФИЛЬМ 1
+    film = "Майор Гром: Игра"
+    time = ["11:45", "14:50","19:50","10:30", "17:45", "11:45","14:50","19:50"]
     border_frame1_1_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame1_1_1.pack(pady=15, padx=15)
-    button1_1_1 = tk.Button(border_frame1_1_1, text="11:45", font = f1, fg="purple", bd=0, padx=7, pady=3, command=partial(b4, "Майор Гром:Игра","11:45" ))
+    button1_1_1 = tk.Button(border_frame1_1_1, text="11:45", font = f1, fg="purple", bd=0, padx=7, pady=3, command=partial(b4, film,time[0] ))
     button1_1_1.pack()
     button_window1_1_1 = canvas.create_window(700, 365, anchor=tk.NW, window=border_frame1_1_1)
     button1_1_1.bind('<Enter>', e1_1_1)
@@ -1866,7 +1868,7 @@ def b2():
 
     border_frame1_1_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame1_1_2.pack(pady=15, padx=15)
-    button1_1_2 = tk.Button(border_frame1_1_2, text="14:50", font = f1, fg=purple, bd=0, padx=7, pady=3)
+    button1_1_2 = tk.Button(border_frame1_1_2, text="14:50", font = f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[1] ))
     button1_1_2.pack()
     button_window1_1_2 = canvas.create_window(800, 365, anchor=tk.NW, window=border_frame1_1_2)
     button1_1_2.bind('<Enter>', e1_1_2)
@@ -1874,51 +1876,53 @@ def b2():
 
     border_frame1_1_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame1_1_3.pack(pady=15, padx=15)
-    button1_1_3 = tk.Button(border_frame1_1_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button1_1_3 = tk.Button(border_frame1_1_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[2] ))
     button1_1_3.pack()
     button_window1_1_2 = canvas.create_window(900, 365, anchor=tk.NW, window=border_frame1_1_3)
     button1_1_3.bind('<Enter>', e1_1_3)
     button1_1_3.bind('<Leave>', l1_1_3)
     border_frame1_2_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame1_2_1.pack(pady=15, padx=15)
-    button1_2_1 = tk.Button(border_frame1_2_1, text="10:30", font=f1, fg="purple", bd=0, padx=7, pady=3)
+    button1_2_1 = tk.Button(border_frame1_2_1, text="10:30", font=f1, fg="purple", bd=0, padx=7, pady=3, command=partial(b4, film,time[3] ))
     button1_2_1.pack()
     button_window1_2_1 = canvas.create_window(700, 435, anchor=tk.NW, window=border_frame1_2_1)
     button1_2_1.bind('<Enter>', e1_2_1)
     button1_2_1.bind('<Leave>', l1_2_1)
     border_frame1_2_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame1_2_2.pack(pady=15, padx=15)
-    button1_2_2 = tk.Button(border_frame1_2_2, text="17:45", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button1_2_2 = tk.Button(border_frame1_2_2, text="17:45", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[4] ))
     button1_2_2.pack()
     button_window1_2_2 = canvas.create_window(800, 435, anchor=tk.NW, window=border_frame1_2_2)
     button1_2_2.bind('<Enter>', e1_2_2)
     button1_2_2.bind('<Leave>', l1_2_2)
     border_frame1_3_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame1_3_1.pack(pady=15, padx=15)
-    button1_3_1 = tk.Button(border_frame1_3_1, text="11:45", font=f1, fg="purple", bd=0, padx=7, pady=3)
+    button1_3_1 = tk.Button(border_frame1_3_1, text="11:45", font=f1, fg="purple", bd=0, padx=7, pady=3, command=partial(b4, film,time[5] ))
     button1_3_1.pack()
     button_window1_3_1 = canvas.create_window(700, 505, anchor=tk.NW, window=border_frame1_3_1)
     button1_3_1.bind('<Enter>', e1_3_1)
     button1_3_1.bind('<Leave>', l1_3_1)
     border_frame1_3_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame1_3_2.pack(pady=15, padx=15)
-    button1_3_2 = tk.Button(border_frame1_3_2, text="14:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button1_3_2 = tk.Button(border_frame1_3_2, text="14:50", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[6] ))
     button1_3_2.pack()
     button_window1_3_2 = canvas.create_window(800, 505, anchor=tk.NW, window=border_frame1_3_2)
     button1_3_2.bind('<Enter>', e1_3_2)
     button1_3_2.bind('<Leave>', l1_3_2)
     border_frame1_3_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame1_3_3.pack(pady=15, padx=15)
-    button1_3_3 = tk.Button(border_frame1_3_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button1_3_3 = tk.Button(border_frame1_3_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[7] ))
     button1_3_3.pack()
     button_window1_3_3 = canvas.create_window(900, 505, anchor=tk.NW, window=border_frame1_3_3)
     button1_3_3.bind('<Enter>', e1_3_3)
     button1_3_3.bind('<Leave>', l1_3_3)
 
     # КНОПКИ В РАСПИСАНИИ ФИЛЬМ 2
+    film = "Министерство неджентельменских дел"
+    time = ["10:00", "13:15", "12:40", "15:15", "19:50", "10:10", "13:15", "21:40"]
     border_frame2_1_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame2_1_1.pack(pady=15, padx=15)
-    button2_1_1 = tk.Button(border_frame2_1_1, text="10:00", font=f1, fg="purple", bd=0, padx=7, pady=3)
+    button2_1_1 = tk.Button(border_frame2_1_1, text="10:00", font=f1, fg="purple", bd=0, padx=7, pady=3, command=partial(b4, film,time[0] ))
     button2_1_1.pack()
     button_window2_1_1 = canvas.create_window(700, 715, anchor=tk.NW, window=border_frame2_1_1)
     button2_1_1.bind('<Enter>', e2_1_1)
@@ -1926,7 +1930,7 @@ def b2():
 
     border_frame2_1_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame2_1_2.pack(pady=15, padx=15)
-    button2_1_2 = tk.Button(border_frame2_1_2, text="13:15", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button2_1_2 = tk.Button(border_frame2_1_2, text="13:15", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[1] ))
     button2_1_2.pack()
     button_window2_1_2 = canvas.create_window(800, 715, anchor=tk.NW, window=border_frame2_1_2)
     button2_1_2.bind('<Enter>', e2_1_2)
@@ -1934,14 +1938,14 @@ def b2():
 
     border_frame2_2_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame2_2_1.pack(pady=15, padx=15)
-    button2_2_1 = tk.Button(border_frame2_2_1, text="12:40", font=f1, fg="purple", bd=0, padx=7, pady=3)
+    button2_2_1 = tk.Button(border_frame2_2_1, text="12:40", font=f1, fg="purple", bd=0, padx=7, pady=3, command=partial(b4, film,time[2] ))
     button2_2_1.pack()
     button_window2_2_1 = canvas.create_window(700, 785, anchor=tk.NW, window=border_frame2_2_1)
     button2_2_1.bind('<Enter>', e2_2_1)
     button2_2_1.bind('<Leave>', l2_2_1)
     border_frame2_2_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame2_2_2.pack(pady=15, padx=15)
-    button2_2_2 = tk.Button(border_frame2_2_2, text="15:15", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button2_2_2 = tk.Button(border_frame2_2_2, text="15:15", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[3] ))
     button2_2_2.pack()
     button_window2_2_2 = canvas.create_window(800, 785, anchor=tk.NW, window=border_frame2_2_2)
     button2_2_2.bind('<Enter>', e2_2_2)
@@ -1949,7 +1953,7 @@ def b2():
 
     border_frame2_2_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame2_2_3.pack(pady=15, padx=15)
-    button2_2_3 = tk.Button(border_frame2_2_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button2_2_3 = tk.Button(border_frame2_2_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[4] ))
     button2_2_3.pack()
     button_window2_2_2 = canvas.create_window(900, 785, anchor=tk.NW, window=border_frame2_2_3)
     button2_2_3.bind('<Enter>', e2_2_3)
@@ -1957,7 +1961,7 @@ def b2():
 
     border_frame2_3_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame2_3_1.pack(pady=15, padx=15)
-    button2_3_1 = tk.Button(border_frame2_3_1, text="10:10", font=f1, fg="purple", bd=0, padx=7, pady=3)
+    button2_3_1 = tk.Button(border_frame2_3_1, text="10:10", font=f1, fg="purple", bd=0, padx=7, pady=3, command=partial(b4, film,time[5] ))
     button2_3_1.pack()
     button_window2_3_1 = canvas.create_window(700, 855, anchor=tk.NW, window=border_frame2_3_1)
     button2_3_1.bind('<Enter>', e2_3_1)
@@ -1965,7 +1969,7 @@ def b2():
 
     border_frame2_3_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame2_3_2.pack(pady=15, padx=15)
-    button2_3_2 = tk.Button(border_frame2_3_2, text="13:15", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button2_3_2 = tk.Button(border_frame2_3_2, text="13:15", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[6] ))
     button2_3_2.pack()
     button_window2_3_2 = canvas.create_window(800, 855, anchor=tk.NW, window=border_frame2_3_2)
     button2_3_2.bind('<Enter>', e2_3_2)
@@ -1973,16 +1977,18 @@ def b2():
 
     border_frame2_3_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame2_3_3.pack(pady=15, padx=15)
-    button2_3_3 = tk.Button(border_frame2_3_3, text="21:40", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button2_3_3 = tk.Button(border_frame2_3_3, text="21:40", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[7] ))
     button2_3_3.pack()
     button_window2_3_3 = canvas.create_window(900, 855, anchor=tk.NW, window=border_frame2_3_3)
     button2_3_3.bind('<Enter>', e2_3_3)
     button2_3_3.bind('<Leave>', l2_3_3)
 
     # КНОПКИ В РАСПИСАНИИ ФИЛЬМ 3
+    film = "Планета обезьян: Новое царство"
+    time = ["16:20", "18:30", "21:40", "21:40", "23:00", "00:20", "17:45", "23:10"]
     border_frame3_1_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame3_1_1.pack(pady=15, padx=15)
-    button3_1_1 = tk.Button(border_frame3_1_1, text="16:20", font=f1, fg="purple", bd=0, padx=7, pady=3)
+    button3_1_1 = tk.Button(border_frame3_1_1, text="16:20", font=f1, fg="purple", bd=0, padx=7, pady=3, command=partial(b4, film,time[0] ))
     button3_1_1.pack()
     button_window3_1_1 = canvas.create_window(700, 1065, anchor=tk.NW, window=border_frame3_1_1)
     button3_1_1.bind('<Enter>', e3_1_1)
@@ -1990,7 +1996,7 @@ def b2():
 
     border_frame3_1_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame3_1_2.pack(pady=15, padx=15)
-    button3_1_2 = tk.Button(border_frame3_1_2, text="18:30", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button3_1_2 = tk.Button(border_frame3_1_2, text="18:30", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[1] ))
     button3_1_2.pack()
     button_window3_1_2 = canvas.create_window(800, 1065, anchor=tk.NW, window=border_frame3_1_2)
     button3_1_2.bind('<Enter>', e3_1_2)
@@ -1998,7 +2004,7 @@ def b2():
 
     border_frame3_1_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame3_1_3.pack(pady=15, padx=15)
-    button3_1_3 = tk.Button(border_frame3_1_3, text="21:40", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button3_1_3 = tk.Button(border_frame3_1_3, text="21:40", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[2] ))
     button3_1_3.pack()
     button_window3_1_3 = canvas.create_window(900, 1065, anchor=tk.NW, window=border_frame3_1_3)
     button3_1_3.bind('<Enter>', e3_1_3)
@@ -2006,7 +2012,7 @@ def b2():
 
     border_frame3_2_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame3_2_1.pack(pady=15, padx=15)
-    button3_2_1 = tk.Button(border_frame3_2_1, text="21:40", font=f1, fg="purple", bd=0, padx=7, pady=3)
+    button3_2_1 = tk.Button(border_frame3_2_1, text="21:40", font=f1, fg="purple", bd=0, padx=7, pady=3, command=partial(b4, film,time[3] ))
     button3_2_1.pack()
     button_window3_2_1 = canvas.create_window(700, 1135, anchor=tk.NW, window=border_frame3_2_1)
     button3_2_1.bind('<Enter>', e3_2_1)
@@ -2014,7 +2020,7 @@ def b2():
 
     border_frame3_2_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame3_2_2.pack(pady=15, padx=15)
-    button3_2_2 = tk.Button(border_frame3_2_2, text="23:00", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button3_2_2 = tk.Button(border_frame3_2_2, text="23:00", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[4] ))
     button3_2_2.pack()
     button_window3_2_2 = canvas.create_window(800, 1135, anchor=tk.NW, window=border_frame3_2_2)
     button3_2_2.bind('<Enter>', e3_2_2)
@@ -2022,7 +2028,7 @@ def b2():
 
     border_frame3_2_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame3_2_3.pack(pady=15, padx=15)
-    button3_2_3 = tk.Button(border_frame3_2_3, text="00:20", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button3_2_3 = tk.Button(border_frame3_2_3, text="00:20", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[5] ))
     button3_2_3.pack()
     button_window3_2_3 = canvas.create_window(900, 1135, anchor=tk.NW, window=border_frame3_2_3)
     button3_2_3.bind('<Enter>', e3_2_3)
@@ -2030,7 +2036,7 @@ def b2():
 
     border_frame3_3_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame3_3_1.pack(pady=15, padx=15)
-    button3_3_1 = tk.Button(border_frame3_3_1, text="17:45", font=f1, fg="purple", bd=0, padx=7, pady=3)
+    button3_3_1 = tk.Button(border_frame3_3_1, text="17:45", font=f1, fg="purple", bd=0, padx=7, pady=3, command=partial(b4, film,time[6] ))
     button3_3_1.pack()
     button_window3_3_1 = canvas.create_window(700, 1205, anchor=tk.NW, window=border_frame3_3_1)
     button3_3_1.bind('<Enter>', e3_3_1)
@@ -2038,16 +2044,18 @@ def b2():
 
     border_frame3_3_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame3_3_2.pack(pady=15, padx=15)
-    button3_3_2 = tk.Button(border_frame3_3_2, text="23:10", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button3_3_2 = tk.Button(border_frame3_3_2, text="23:10", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[7] ))
     button3_3_2.pack()
     button_window3_3_2 = canvas.create_window(800, 1205, anchor=tk.NW, window=border_frame3_3_2)
     button3_3_2.bind('<Enter>', e3_3_2)
     button3_3_2.bind('<Leave>', l3_3_2)
 
     # КНОПКИ В РАСПИСАНИИ ФИЛЬМ 4
+    film = "Пушистый вояж"
+    time = ["11:45", "14:50", "19:50", "10:30", "17:45", "11:45", "14:50", "19:50"]
     border_frame4_1_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame4_1_1.pack(pady=15, padx=15)
-    button4_1_1 = tk.Button(border_frame4_1_1, text="11:45", font=f1, fg="purple", bd=0, padx=7, pady=3)
+    button4_1_1 = tk.Button(border_frame4_1_1, text="11:45", font=f1, fg="purple", bd=0, padx=7, pady=3, command=partial(b4, film,time[0] ))
     button4_1_1.pack()
     button_window4_1_1 = canvas.create_window(700, 1415, anchor=tk.NW, window=border_frame4_1_1)
     button4_1_1.bind('<Enter>', e4_1_1)
@@ -2055,7 +2063,7 @@ def b2():
 
     border_frame4_1_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame4_1_2.pack(pady=15, padx=15)
-    button4_1_2 = tk.Button(border_frame4_1_2, text="14:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button4_1_2 = tk.Button(border_frame4_1_2, text="14:50", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[1] ))
     button4_1_2.pack()
     button_window4_1_2 = canvas.create_window(800, 1415, anchor=tk.NW, window=border_frame4_1_2)
     button4_1_2.bind('<Enter>', e4_1_2)
@@ -2063,7 +2071,7 @@ def b2():
 
     border_frame4_1_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame4_1_3.pack(pady=15, padx=15)
-    button4_1_3 = tk.Button(border_frame4_1_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button4_1_3 = tk.Button(border_frame4_1_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[2] ))
     button4_1_3.pack()
     button_window4_4_2 = canvas.create_window(900, 1415, anchor=tk.NW, window=border_frame4_1_3)
     button4_1_3.bind('<Enter>', e4_1_3)
@@ -2071,7 +2079,7 @@ def b2():
 
     border_frame4_2_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame4_2_1.pack(pady=15, padx=15)
-    button4_2_1 = tk.Button(border_frame4_2_1, text="10:30", font=f1, fg="purple", bd=0, padx=7, pady=3)
+    button4_2_1 = tk.Button(border_frame4_2_1, text="10:30", font=f1, fg="purple", bd=0, padx=7, pady=3, command=partial(b4, film,time[3] ))
     button4_2_1.pack()
     button_window4_2_1 = canvas.create_window(700, 1485, anchor=tk.NW, window=border_frame4_2_1)
     button4_2_1.bind('<Enter>', e4_2_1)
@@ -2079,7 +2087,7 @@ def b2():
 
     border_frame4_2_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame4_2_2.pack(pady=15, padx=15)
-    button4_2_2 = tk.Button(border_frame4_2_2, text="17:45", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button4_2_2 = tk.Button(border_frame4_2_2, text="17:45", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[4] ))
     button4_2_2.pack()
     button_window4_2_2 = canvas.create_window(800, 1485, anchor=tk.NW, window=border_frame4_2_2)
     button4_2_2.bind('<Enter>', e4_2_2)
@@ -2087,7 +2095,7 @@ def b2():
 
     border_frame4_3_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame4_3_1.pack(pady=15, padx=15)
-    button4_3_1 = tk.Button(border_frame4_3_1, text="11:45", font=f1, fg="purple", bd=0, padx=7, pady=3)
+    button4_3_1 = tk.Button(border_frame4_3_1, text="11:45", font=f1, fg="purple", bd=0, padx=7, pady=3, command=partial(b4, film,time[5] ))
     button4_3_1.pack()
     button_window4_3_1 = canvas.create_window(700, 1555, anchor=tk.NW, window=border_frame4_3_1)
     button4_3_1.bind('<Enter>', e4_3_1)
@@ -2095,7 +2103,7 @@ def b2():
 
     border_frame4_3_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame4_3_2.pack(pady=15, padx=15)
-    button4_3_2 = tk.Button(border_frame4_3_2, text="14:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button4_3_2 = tk.Button(border_frame4_3_2, text="14:50", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[6] ))
     button4_3_2.pack()
     button_window4_3_2 = canvas.create_window(800, 1555, anchor=tk.NW, window=border_frame4_3_2)
     button4_3_2.bind('<Enter>', e4_3_2)
@@ -2103,15 +2111,18 @@ def b2():
 
     border_frame4_3_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame4_3_3.pack(pady=15, padx=15)
-    button4_3_3 = tk.Button(border_frame4_3_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button4_3_3 = tk.Button(border_frame4_3_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[7] ))
     button4_3_3.pack()
     button_window4_3_3 = canvas.create_window(900, 1555, anchor=tk.NW, window=border_frame4_3_3)
     button4_3_3.bind('<Enter>', e4_3_3)
     button4_3_3.bind('<Leave>', l4_3_3)
+
     # КНОПКИ В РАСПИСАНИИ ФИЛЬМ 5
+    film = "Сто лет тому вперед"
+    time = ["11:20", "16:10", "10:20", "14:30", "19:50", "11:50", "17:40", "23:20"]
     border_frame5_1_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame5_1_1.pack(pady=15, padx=15)
-    button5_1_1 = tk.Button(border_frame5_1_1, text="11:20", font=f1, fg="purple", bd=0, padx=7, pady=3)
+    button5_1_1 = tk.Button(border_frame5_1_1, text="11:20", font=f1, fg="purple", bd=0, padx=7, pady=3, command=partial(b4, film,time[0] ))
     button5_1_1.pack()
     button_window5_1_1 = canvas.create_window(700, 1765, anchor=tk.NW, window=border_frame5_1_1)
     button5_1_1.bind('<Enter>', e5_1_1)
@@ -2119,7 +2130,7 @@ def b2():
 
     border_frame5_1_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame5_1_2.pack(pady=15, padx=15)
-    button5_1_2 = tk.Button(border_frame5_1_2, text="16:10", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button5_1_2 = tk.Button(border_frame5_1_2, text="16:10", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[1] ))
     button5_1_2.pack()
     button_window5_1_2 = canvas.create_window(800, 1765, anchor=tk.NW, window=border_frame5_1_2)
     button5_1_2.bind('<Enter>', e5_1_2)
@@ -2127,7 +2138,7 @@ def b2():
 
     border_frame5_2_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame5_2_1.pack(pady=15, padx=15)
-    button5_2_1 = tk.Button(border_frame5_2_1, text="10:20", font=f1, fg="purple", bd=0, padx=7, pady=3)
+    button5_2_1 = tk.Button(border_frame5_2_1, text="10:20", font=f1, fg="purple", bd=0, padx=7, pady=3, command=partial(b4, film,time[2] ))
     button5_2_1.pack()
     button_window5_2_1 = canvas.create_window(700, 1835, anchor=tk.NW, window=border_frame5_2_1)
     button5_2_1.bind('<Enter>', e5_2_1)
@@ -2135,7 +2146,7 @@ def b2():
 
     border_frame5_2_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame5_2_2.pack(pady=15, padx=15)
-    button5_2_2 = tk.Button(border_frame5_2_2, text="14:30", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button5_2_2 = tk.Button(border_frame5_2_2, text="14:30", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[3] ))
     button5_2_2.pack()
     button_window5_2_2 = canvas.create_window(800, 1835, anchor=tk.NW, window=border_frame5_2_2)
     button5_2_2.bind('<Enter>', e5_2_2)
@@ -2143,7 +2154,7 @@ def b2():
 
     border_frame5_2_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame5_2_3.pack(pady=15, padx=15)
-    button5_2_3 = tk.Button(border_frame5_2_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button5_2_3 = tk.Button(border_frame5_2_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[4] ))
     button5_2_3.pack()
     button_window5_2_2 = canvas.create_window(900, 1835, anchor=tk.NW, window=border_frame5_2_3)
     button5_2_3.bind('<Enter>', e5_2_3)
@@ -2151,7 +2162,7 @@ def b2():
 
     border_frame5_3_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame5_3_1.pack(pady=15, padx=15)
-    button5_3_1 = tk.Button(border_frame5_3_1, text="11:50", font=f1, fg="purple", bd=0, padx=7, pady=3)
+    button5_3_1 = tk.Button(border_frame5_3_1, text="11:50", font=f1, fg="purple", bd=0, padx=7, pady=3, command=partial(b4, film,time[5] ))
     button5_3_1.pack()
     button_window5_3_1 = canvas.create_window(700, 1905, anchor=tk.NW, window=border_frame5_3_1)
     button5_3_1.bind('<Enter>', e5_3_1)
@@ -2159,7 +2170,7 @@ def b2():
 
     border_frame5_3_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame5_3_2.pack(pady=15, padx=15)
-    button5_3_2 = tk.Button(border_frame5_3_2, text="17:40", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button5_3_2 = tk.Button(border_frame5_3_2, text="17:40", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[6] ))
     button5_3_2.pack()
     button_window5_3_2 = canvas.create_window(800, 1905, anchor=tk.NW, window=border_frame5_3_2)
     button5_3_2.bind('<Enter>', e5_3_2)
@@ -2167,7 +2178,7 @@ def b2():
 
     border_frame5_3_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame5_3_3.pack(pady=15, padx=15)
-    button5_3_3 = tk.Button(border_frame5_3_3, text="23:20", font=f1, fg=purple, bd=0, padx=7, pady=3)
+    button5_3_3 = tk.Button(border_frame5_3_3, text="23:20", font=f1, fg=purple, bd=0, padx=7, pady=3, command=partial(b4, film,time[7] ))
     button5_3_3.pack()
     button_window5_3_3 = canvas.create_window(900, 1905, anchor=tk.NW, window=border_frame5_3_3)
     button5_3_3.bind('<Enter>', e5_3_3)
