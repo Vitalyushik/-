@@ -480,12 +480,46 @@ def b2():
     w2.title('РАСПИСАНИЕ')
     w2.resizable(False, False)
     w2.geometry('1280x960')
-
+    ik6 = PhotoImage(file='незнакомцы.png')
+    ik7 = PhotoImage(file='Винни Пух.png')
+    ik8 = PhotoImage(file='суперпташки.png')
+    ik9 = PhotoImage(file='судная ночь.png')
+    ik10 = PhotoImage(file='Асфальтовые джунгли.png')
 
     def on_mouse_wheel(event):
         canvas.yview_scroll(-1 * (event.delta // 120), "units")
     def on_selection_change(*args):
-        pass
+        option = selected_option.get()
+        if option in "30.05.2024":
+            canvas.create_image(300, 500, image=ik6)
+            canvas.create_image(300, 850, image=ik7)
+            canvas.create_image(300, 1200, image=ik8)
+            canvas.create_image(300, 1550, image=ik9)
+            canvas.create_image(300, 1900, image=ik10)
+        elif option in "31.05.2024":
+            canvas.create_image(300, 500, image=ik2)
+            canvas.create_image(300, 850, image=ik4)
+            canvas.create_image(300, 1200, image=ik6)
+            canvas.create_image(300, 1550, image=ik8)
+            canvas.create_image(300, 1900, image=ik10)
+        elif option in "01.06.2024":
+            canvas.create_image(300, 500, image=ik1)
+            canvas.create_image(300, 850, image=ik3)
+            canvas.create_image(300, 1200, image=ik5)
+            canvas.create_image(300, 1550, image=ik7)
+            canvas.create_image(300, 1900, image=ik9)
+        elif option in "02.06.2024":
+            canvas.create_image(300, 500, image=ik3)
+            canvas.create_image(300, 850, image=ik4)
+            canvas.create_image(300, 1200, image=ik5)
+            canvas.create_image(300, 1550, image=ik6)
+            canvas.create_image(300, 1900, image=ik7)
+        else:
+            canvas.create_image(300, 500, image=ik1)
+            canvas.create_image(300, 850, image=ik2)
+            canvas.create_image(300, 1200, image=ik3)
+            canvas.create_image(300, 1550, image=ik4)
+            canvas.create_image(300, 1900, image=ik5)
 
     scrollable_frame = tk.Frame(w2)
     scrollable_frame.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
@@ -511,7 +545,7 @@ def b2():
 
     selected_option = StringVar(canvas)
     selected_option.set("29.05.2024")
-    options = [ "30.05.2024", "31.05.2024", "1.06.2024","2.06.2024"]
+    options = ["29.05.2024", "30.05.2024", "31.05.2024", "1.06.2024","2.06.2024"]
     custom_font = font.Font(family="Helvetica", size=14)
 
     dropdown = OptionMenu(canvas, selected_option, *options)
