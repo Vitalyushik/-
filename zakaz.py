@@ -9,6 +9,7 @@ import tkintermapview
 from PIL import ImageTk, Image
 import itertools
 
+#Кнопки перемотки зала на главной странице
 def r():
     l1['image'] = m2
     br['command'] = r1
@@ -38,113 +39,8 @@ def l2():
     l1['image'] = m1
     bl['command'] = l
 
-def rd():
-    l1['image'] = md2
-    br['command'] = r1d
-
-
-def r1d():
-    l1['image'] = md3
-    br['command'] = r2d
-
-
-def r2d():
-    l1['image'] = md1
-    br['command'] = rd
-
-
-def ld():
-    l1['image'] = md3
-    bl['command'] = l11d
-
-
-def l11d():
-    l1['image'] = md2
-    bl['command'] = l2d
-
-
-def l2d():
-    l1['image'] = md1
-    bl['command'] = ld
-
 
 def b1():
-    def korz1():
-        def chek():
-            ch = Toplevel(wk)
-            ch.geometry('345x600+200+50')
-            ch.resizable(False, False)
-            ch.title('Чек')
-            ch.configure(bg=wh)
-            dat = datetime.today()
-            dat1 = dat.strftime('%Y.%m.%d')
-            tim = dat.strftime('%H:%M:%S')
-            n = randrange(100000, 999999)
-            n1 = randrange(100000000, 999999999)
-            n2 = randrange(1_000_000_000, 9999999999)
-            h = f'''ООО "ПРЕМЬЕР ЗАЛ"
-Екатеринбург, ул. Сулимова, 50
-Кассовый чек №{n}
-________________________________________________________________________'''
-            lch = Label(ch, text=h, bg=wh)
-            lch.pack()
-            kon = f'''_______________________________________________________________________
-   ИНН: {n1}                          ФП: {n2} 
- Кассир: Иванов И.И.
-       Дата: {dat1}                          Время: {tim}
-'''
-            for o in cs:
-                if o > 0:
-                    cs1.extend(str(o))
-            for i in range(len(g1)):
-                g3 = f'''{g2[i]}'''
-                cs2 = f'''                         {cs1[i]}
-            {g2[i][-6:]}  *  {cs1[i]} = {int(g2[i][-6:-2]) * int(cs1[i])}p.'''
-                lk1 = Label(ch, text=g3, bg=wh, font=('Calibri', '10'))
-                lk1.place(x=2, y=100 + 50 * i)
-                lc = Label(ch, text=cs2, bg=wh, font=('Calibri', '10'))
-                lc.place(x=200, y=100 + 50 * i)
-            lck = Label(ch, text=kon, bg=wh, justify='left')
-            lck.place(x=0, y=82 + 50 * len(g1))
-            ch.grab_set()
-            ch.mainloop()
-
-        global g, cs, lc1
-        wk = Toplevel()
-        wk.resizable(False, False)
-        wk.geometry('400x600+200+50')
-        wk.iconbitmap('icon.ico')
-        wk.title('Корзина')
-        lk = Label(wk, image=korzina)
-        lk.place(x=-2, y=-2)
-        lp = Label(wk, width=0, height=0, bg='#58C893')
-        lp.pack()
-        cs = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16]
-        g1 = set(g)
-        g2 = list(g1)
-        cs = list(cs)
-        cs1 = list()
-        s = 0
-        for o in cs:
-            if o > 0:
-                cs1.extend(str(o))
-        for i in range(len(g1)):
-            s += (int(g2[i][-6:-2]) * int(cs1[i]))
-            g3 = f'''{g2[i]}'''
-            cs2 = f'''                         {cs1[i]}
-{g2[i][-6:]}  *  {cs1[i]} = {int(g2[i][-6:-2]) * int(cs1[i])}p.'''
-            lk1 = Label(wk, text=g3, bg=wh1, font=('Inter', '10'), fg=wh2)
-            lk1.place(x=2, y=21 + 50*i)
-            lc = Label(wk, text=cs2, bg=wh1, font=('Inter', '10'), fg=wh2)
-            lc.place(x=270, y=21 + 50*i)
-            li = Label(wk, text=f'''Всегo:{s}p.
- Заказ будет ждать вас в магазине
- Оплата при получении''', bg=wh1, font=('Inter', '10'), fg=wh2)
-            li.place(x=2, y=500)
-        op = Button(wk, image=d, borderwidth=0, bg=wh1, highlightthickness=0, command=chek)
-        op.place(x=250, y=530)
-        wk.grab_set()
-        wk.mainloop()
 
 #ФУНКЦИИ ВЫЗЫВАЮЩИЕ ОПИСАНИЕ КАЖДОГО ФИЛЬМА
     def vit():
@@ -578,105 +474,7 @@ ________________________________________________________________________'''
     w1.grab_set()
     w1.mainloop()
 def b2():
-    def vit1():
-        def korz1():
-            def chek():
-                ch = Toplevel(wk)
-                ch.geometry('345x600+200+50')
-                ch.resizable(False, False)
-                ch.title('Чек')
-                ch.configure(bg=wh)
-                dat = datetime.today()
-                dat1 = dat.strftime('%Y.%m.%d')
-                tim = dat.strftime('%H:%M:%S')
-                n = randrange(100000, 999999)
-                n1 = randrange(100000000, 999999999)
-                n2 = randrange(1_000_000_000, 9999999999)
-                h = f'''ООО "ПРЕМЬЕР ЗАЛ"
-Екатеринбург, ул. Сулимова, 50
-Кассовый чек №{n}
-________________________________________________________________________'''
-                lch = Label(ch, text=h, bg=wh)
-                lch.pack()
-                kon = f'''_______________________________________________________________________
-   ИНН: {n1}                          ФП: {n2} 
- Кассир: Иванов И.И.
-       Дата: {dat1}                          Время: {tim}
-'''
-                for o in cs:
-                    if o > 0:
-                        cs1.extend(str(o))
-                for i in range(len(g1)):
-                    g3 = f'''{g2[i]}'''
-                    cs2 = f'''                         {cs1[i]}
-{g2[i][-6:]}  *  {cs1[i]} = {int(g2[i][-6:-2]) * int(cs1[i])}p.'''
-                    lk1 = Label(ch, text=g3, bg=wh, font=('Calibri', '10'))
-                    lk1.place(x=2, y=100 + 50 * i)
-                    lc = Label(ch, text=cs2, bg=wh, font=('Calibri', '10'))
-                    lc.place(x=200, y=100 + 50 * i)
-                lck = Label(ch, text=kon, bg=wh, justify='left')
-                lck.place(x=0, y=82 + 50 * len(g1))
-                ch.grab_set()
-                ch.mainloop()
 
-            global g, cs, lc1
-            wk = Toplevel()
-            wk.resizable(False, False)
-            wk.geometry('400x600+200+50')
-            wk.iconbitmap('icon.ico')
-            wk.title('Корзина')
-            lk = Label(wk, image=korzina)
-            lk.place(x=-2, y=-2)
-            lp = Label(wk, width=0, height=0, bg='#58C893')
-            lp.pack()
-            cs = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16]
-            g1 = set(g)
-            g2 = list(g1)
-            cs = list(cs)
-            cs1 = list()
-            s = 0
-            for o in cs:
-                if o > 0:
-                    cs1.extend(str(o))
-            for i in range(len(g1)):
-                s += (int(g2[i][-6:-2]) * int(cs1[i]))
-                g3 = f'''{g2[i]}'''
-                cs2 = f'''                         {cs1[i]}
-{g2[i][-6:]}  *  {cs1[i]} = {int(g2[i][-6:-2]) * int(cs1[i])}p.'''
-                lk1 = Label(wk, text=g3, bg=wh1, font=('Inter', '10'), fg=wh2)
-                lk1.place(x=2, y=21 + 50 * i)
-                lc = Label(wk, text=cs2, bg=wh1, font=('Inter', '10'), fg=wh2)
-                lc.place(x=270, y=21 + 50 * i)
-                li = Label(wk, text=f'''Всегo:{s}p.
- Заказ будет ждать вас в магазине
- Оплата при получении''', bg=wh1, font=('Inter', '10'), fg=wh2)
-                li.place(x=2, y=500)
-            op = Button(wk, image=d, borderwidth=0, bg=wh1, highlightthickness=0, command=chek)
-            op.place(x=250, y=530)
-            wk.grab_set()
-            wk.mainloop()
-
-        def bk(e):
-            korz.configure(bg=dgr)
-
-        def bk1(e):
-            korz.configure(bg='#93F9B9')
-
-        vit = Toplevel(w2)
-        vit.title('Расписание')
-        vit.iconbitmap('icon.ico')
-        vit.geometry('834x300+200+50')
-        vit.resizable(False, False)
-        lv = Label(vit, image=ivit)
-        lv.place(x=0, y=-2)
-        kor = PhotoImage(file='kor.png')
-        korz = Button(vit, image=kor, borderwidth=0, height=300, bg='#93F9B9', width=30, command=korz1, activebackground=dgr)
-        korz.place(x=802, y=0)
-        korz.bind('<Enter>', bk)
-        korz.bind('<Leave>', bk1)
-        vit.grab_set()
-        vit.mainloop()
-    global bz2
     w2 = Toplevel(m)
     w2.iconbitmap('icon.ico')
     w2.title('РАСПИСАНИЕ')
@@ -706,7 +504,6 @@ ________________________________________________________________________'''
     image = tk.PhotoImage(file="raspback2.png")
     canvas.create_image(0, 0, image=image, anchor=tk.NW)
 
-    but = PhotoImage(file='but.png')
 
     canvas.create_text(400, 200, text='Расписание', fill="Black", font=("Rostov", 48))
 
@@ -1242,28 +1039,8 @@ ________________________________________________________________________'''
     button5_3_3.bind('<Enter>', e5_3_3)
     button5_3_3.bind('<Leave>', l5_3_3)
 
-
-    if k == 1:
-        bz2k = ser
-    else:
-        bz2k = wh
-    bz2 = Button(w2, image=but, borderwidth=0, bg=bz2k, activebackground=bz2k, command=vit1)
-    bz2.place(x=630, y=271)
     w2.grab_set()
     w2.mainloop()
-
-
-def b4():
-    w4 = Toplevel(m)
-    w4.title('О нас')
-    w4.iconbitmap('icon.ico')
-    w4.resizable(False, False)
-    w4.geometry('800x535+200+50')
-    lw4 = Label(w4, image=iw4)
-    lw4.place(x=-2, y=0)
-    w4.grab_set()
-    w4.mainloop()
-
 
 def b3():
     w3 = Toplevel(m)
@@ -1452,13 +1229,6 @@ def fb3(e):
 def fb3l(e):
     bw3.configure(fg=black)
 
-def fs(e):
-    bs.configure(bg=dgr)
-
-
-def fsl(e):
-    bs.configure(bg=gr)
-
 def fbre(e):
     br.place(x=1232,y=382)
 def fbrl(e):
@@ -1479,24 +1249,6 @@ red= '#fb3100'
 fon = '#f3f9fd'
 g = list()
 gray = '#7f7679'
-c1 = 0
-c2 = 0
-c3 = 0
-c4 = 0
-c5 = 0
-c6 = 0
-c7 = 0
-c8 = 0
-c9 = 0
-c10 = 0
-c11 = 0
-c12 = 0
-c13 = 0
-c14 = 0
-c15 = 0
-c16 = 0
-
-
 m = Tk()
 
 m.geometry('1280x960')
@@ -1508,11 +1260,8 @@ m1 = PhotoImage(file='main1.png')
 m2 = PhotoImage(file='main2.png')
 m3 = PhotoImage(file='main3.png')
 
-iw4 = PhotoImage(file='w4.png')
 iw3 = ImageTk.PhotoImage(Image.open('фон афиша.png').resize((1200,700)))
 iw1 = PhotoImage(file='фон афиша.png')
-korzina = PhotoImage(file='korz.png')
-d = PhotoImage(file='zak.png')
 l1 = Label(m, image=m1)
 l1.place(x=-2, y=0)
 
