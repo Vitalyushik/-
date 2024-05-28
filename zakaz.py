@@ -751,55 +751,236 @@ ________________________________________________________________________'''
     canvas.create_text(420, 1920, text='ККЦ "Премьер Зал Гранат"', fill="Black", width=270, font=("Helvetica", 15),anchor=tk.W)
     canvas.create_image(300, 1900, image=ik5)
     f1 = font.Font(family="Helvetica", size=12, weight="bold")
+
+    g = "#f0f4f7"
+    def e1_1_1(e):
+        button1_1_1.config(bg=purple, fg = black)
+    def l1_1_1(e):
+        button1_1_1.config(bg= g ,fg = purple)
+
+    def e1_1_2(e):
+        button1_1_2.config(bg=purple, fg=black)
+    def l1_1_2(e):
+        button1_1_2.config(bg=g, fg=purple)
+    def e1_1_3(e):
+        button1_1_3.config(bg=purple, fg = black)
+    def l1_1_3(e):
+        button1_1_3.config(bg= g ,fg = purple)
+    def e1_2_1(e):
+        button1_2_1.config(bg=purple, fg = black)
+    def l1_2_1(e):
+        button1_2_1.config(bg= g ,fg = purple)
+
+    def e1_2_2(e):
+        button1_2_2.config(bg=purple, fg=black)
+    def l1_2_2(e):
+        button1_2_2.config(bg=g, fg=purple)
+    def e1_3_1(e):
+        button1_3_1.config(bg=purple, fg = black)
+    def l1_3_1(e):
+        button1_3_1.config(bg= g ,fg = purple)
+
+    def e1_3_2(e):
+        button1_3_2.config(bg=purple, fg=black)
+    def l1_3_2(e):
+        button1_3_2.config(bg=g, fg=purple)
+    def e1_3_3(e):
+        button1_3_3.config(bg=purple, fg = black)
+    def l1_3_3(e):
+        button1_3_3.config(bg= g ,fg = purple)
+        
+    def e2_1_1(e):
+        button2_1_1.config(bg=purple, fg = black)
+    def l2_1_1(e):
+        button2_1_1.config(bg= g ,fg = purple)
+
+    def e2_1_2(e):
+        button2_1_2.config(bg=purple, fg=black)
+    def l2_1_2(e):
+        button2_1_2.config(bg=g, fg=purple)
+    def e2_2_1(e):
+        button2_2_1.config(bg=purple, fg = black)
+    def l2_2_1(e):
+        button2_2_1.config(bg= g ,fg = purple)
+
+    def e2_2_2(e):
+        button2_2_2.config(bg=purple, fg=black)
+    def l2_2_2(e):
+        button2_2_2.config(bg=g, fg=purple)
+    def e2_2_3(e):
+        button2_2_3.config(bg=purple, fg=black)
+    def l2_2_3(e):
+        button2_2_3.config(bg=g, fg=purple)
+    def e2_3_1(e):
+        button2_3_1.config(bg=purple, fg = black)
+    def l2_3_1(e):
+        button2_3_1.config(bg= g ,fg = purple)
+
+    def e2_3_2(e):
+        button2_3_2.config(bg=purple, fg=black)
+    def l2_3_2(e):
+        button2_3_2.config(bg=g, fg=purple)
+    def e2_3_3(e):
+        button2_3_3.config(bg=purple, fg = black)
+    def l2_3_3(e):
+        button2_3_3.config(bg= g ,fg = purple)
+    def e3_1_1(e):
+        button3_1_1.config(bg=purple, fg = black)
+    def l3_1_1(e):
+        button3_1_1.config(bg= g ,fg = purple)
+    def e3_1_2(e):
+        button3_1_2.config(bg=purple, fg = black)
+    def l3_1_2(e):
+        button3_1_2.config(bg= g ,fg = purple)
+    def e3_1_3(e):
+        button3_1_3.config(bg=purple, fg = black)
+    def l3_1_3(e):
+        button3_1_3.config(bg= g ,fg = purple)
+    def e3_2_1(e):
+        button3_2_1.config(bg=purple, fg = black)
+    def l3_2_1(e):
+        button3_2_1.config(bg= g ,fg = purple)
+    def e3_2_2(e):
+        button3_2_2.config(bg=purple, fg = black)
+    def l3_2_2(e):
+        button3_2_2.config(bg= g ,fg = purple)
+    def e3_2_3(e):
+        button3_2_3.config(bg=purple, fg = black)
+    def l3_2_3(e):
+        button3_2_3.config(bg= g ,fg = purple)
+    def e3_3_1(e):
+        button3_3_1.config(bg=purple, fg = black)
+    def l3_3_1(e):
+        button3_3_1.config(bg= g ,fg = purple)
+    def e3_3_2(e):
+        button3_3_2.config(bg=purple, fg = black)
+    def l3_3_2(e):
+        button3_3_2.config(bg= g ,fg = purple)
+    def e4_1_1(e):
+        button4_1_1.config(bg=purple, fg = black)
+    def l4_1_1(e):
+        button4_1_1.config(bg= g ,fg = purple)
+    def e4_1_2(e):
+        button4_1_2.config(bg=purple, fg = black)
+    def l4_1_2(e):
+        button4_1_2.config(bg= g ,fg = purple)
+    def e4_1_3(e):
+        button4_1_3.config(bg=purple, fg = black)
+    def l4_1_3(e):
+        button4_1_3.config(bg= g ,fg = purple)
+
+    def e4_2_1(e):
+        button4_2_1.config(bg=purple, fg = black)
+    def l4_2_1(e):
+        button4_2_1.config(bg= g ,fg = purple)
+    def e4_2_2(e):
+        button4_2_2.config(bg=purple, fg = black)
+    def l4_2_2(e):
+        button4_2_2.config(bg= g ,fg = purple)
+    def e4_3_1(e):
+        button4_3_1.config(bg=purple, fg = black)
+    def l4_3_1(e):
+        button4_3_1.config(bg= g ,fg = purple)
+    def e4_3_2(e):
+        button4_3_2.config(bg=purple, fg = black)
+    def l4_3_2(e):
+        button4_3_2.config(bg= g ,fg = purple)
+    def e4_3_3(e):
+        button4_3_3.config(bg=purple, fg = black)
+    def l4_3_3(e):
+        button4_3_3.config(bg= g ,fg = purple)
+    def e5_1_1(e):
+        button5_1_1.config(bg=purple, fg = black)
+    def l5_1_1(e):
+        button5_1_1.config(bg= g ,fg = purple)
+    def e5_1_2(e):
+        button5_1_2.config(bg=purple, fg = black)
+    def l5_1_2(e):
+        button5_1_2.config(bg= g ,fg = purple)
+    def e5_2_1(e):
+        button5_2_1.config(bg=purple, fg = black)
+    def l5_2_1(e):
+        button5_2_1.config(bg= g ,fg = purple)
+    def e5_2_2(e):
+        button5_2_2.config(bg=purple, fg = black)
+    def l5_2_2(e):
+        button5_2_2.config(bg= g ,fg = purple)
+    def e5_2_3(e):
+        button5_2_3.config(bg=purple, fg = black)
+    def l5_2_3(e):
+        button5_2_3.config(bg= g ,fg = purple)
+    def e5_3_1(e):
+        button5_3_1.config(bg=purple, fg = black)
+    def l5_3_1(e):
+        button5_3_1.config(bg= g ,fg = purple)
+    def e5_3_2(e):
+        button5_3_2.config(bg=purple, fg = black)
+    def l5_3_2(e):
+        button5_3_2.config(bg= g ,fg = purple)
+    def e5_3_3(e):
+        button5_3_3.config(bg=purple, fg = black)
+    def l5_3_3(e):
+        button5_3_3.config(bg= g ,fg = purple)
+
     #КНОПКИ В РАСПИСАНИИ ФИЛЬМ 1
     border_frame1_1_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame1_1_1.pack(pady=15, padx=15)
     button1_1_1 = tk.Button(border_frame1_1_1, text="11:45", font = f1, fg="purple", bd=0, padx=7, pady=3)
     button1_1_1.pack()
     button_window1_1_1 = canvas.create_window(700, 365, anchor=tk.NW, window=border_frame1_1_1)
+    button1_1_1.bind('<Enter>', e1_1_1)
+    button1_1_1.bind('<Leave>', l1_1_1)
 
     border_frame1_1_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame1_1_2.pack(pady=15, padx=15)
     button1_1_2 = tk.Button(border_frame1_1_2, text="14:50", font = f1, fg=purple, bd=0, padx=7, pady=3)
     button1_1_2.pack()
     button_window1_1_2 = canvas.create_window(800, 365, anchor=tk.NW, window=border_frame1_1_2)
+    button1_1_2.bind('<Enter>', e1_1_2)
+    button1_1_2.bind('<Leave>', l1_1_2)
 
     border_frame1_1_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame1_1_3.pack(pady=15, padx=15)
     button1_1_3 = tk.Button(border_frame1_1_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button1_1_3.pack()
     button_window1_1_2 = canvas.create_window(900, 365, anchor=tk.NW, window=border_frame1_1_3)
-
+    button1_1_3.bind('<Enter>', e1_1_3)
+    button1_1_3.bind('<Leave>', l1_1_3)
     border_frame1_2_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame1_2_1.pack(pady=15, padx=15)
     button1_2_1 = tk.Button(border_frame1_2_1, text="10:30", font=f1, fg="purple", bd=0, padx=7, pady=3)
     button1_2_1.pack()
     button_window1_2_1 = canvas.create_window(700, 435, anchor=tk.NW, window=border_frame1_2_1)
-
+    button1_2_1.bind('<Enter>', e1_2_1)
+    button1_2_1.bind('<Leave>', l1_2_1)
     border_frame1_2_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame1_2_2.pack(pady=15, padx=15)
     button1_2_2 = tk.Button(border_frame1_2_2, text="17:45", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button1_2_2.pack()
     button_window1_2_2 = canvas.create_window(800, 435, anchor=tk.NW, window=border_frame1_2_2)
-
+    button1_2_2.bind('<Enter>', e1_2_2)
+    button1_2_2.bind('<Leave>', l1_2_2)
     border_frame1_3_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame1_3_1.pack(pady=15, padx=15)
     button1_3_1 = tk.Button(border_frame1_3_1, text="11:45", font=f1, fg="purple", bd=0, padx=7, pady=3)
     button1_3_1.pack()
     button_window1_3_1 = canvas.create_window(700, 505, anchor=tk.NW, window=border_frame1_3_1)
-
+    button1_3_1.bind('<Enter>', e1_3_1)
+    button1_3_1.bind('<Leave>', l1_3_1)
     border_frame1_3_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame1_3_2.pack(pady=15, padx=15)
     button1_3_2 = tk.Button(border_frame1_3_2, text="14:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button1_3_2.pack()
     button_window1_3_2 = canvas.create_window(800, 505, anchor=tk.NW, window=border_frame1_3_2)
-
+    button1_3_2.bind('<Enter>', e1_3_2)
+    button1_3_2.bind('<Leave>', l1_3_2)
     border_frame1_3_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame1_3_3.pack(pady=15, padx=15)
     button1_3_3 = tk.Button(border_frame1_3_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button1_3_3.pack()
     button_window1_3_3 = canvas.create_window(900, 505, anchor=tk.NW, window=border_frame1_3_3)
-
+    button1_3_3.bind('<Enter>', e1_3_3)
+    button1_3_3.bind('<Leave>', l1_3_3)
 
     # КНОПКИ В РАСПИСАНИИ ФИЛЬМ 2
     border_frame2_1_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
@@ -807,48 +988,63 @@ ________________________________________________________________________'''
     button2_1_1 = tk.Button(border_frame2_1_1, text="10:00", font=f1, fg="purple", bd=0, padx=7, pady=3)
     button2_1_1.pack()
     button_window2_1_1 = canvas.create_window(700, 715, anchor=tk.NW, window=border_frame2_1_1)
+    button2_1_1.bind('<Enter>', e2_1_1)
+    button2_1_1.bind('<Leave>', l2_1_1)
 
     border_frame2_1_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame2_1_2.pack(pady=15, padx=15)
     button2_1_2 = tk.Button(border_frame2_1_2, text="13:15", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button2_1_2.pack()
     button_window2_1_2 = canvas.create_window(800, 715, anchor=tk.NW, window=border_frame2_1_2)
+    button2_1_2.bind('<Enter>', e2_1_2)
+    button2_1_2.bind('<Leave>', l2_1_2)
 
     border_frame2_2_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame2_2_1.pack(pady=15, padx=15)
     button2_2_1 = tk.Button(border_frame2_2_1, text="12:40", font=f1, fg="purple", bd=0, padx=7, pady=3)
     button2_2_1.pack()
     button_window2_2_1 = canvas.create_window(700, 785, anchor=tk.NW, window=border_frame2_2_1)
-
+    button2_2_1.bind('<Enter>', e2_2_1)
+    button2_2_1.bind('<Leave>', l2_2_1)
     border_frame2_2_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame2_2_2.pack(pady=15, padx=15)
     button2_2_2 = tk.Button(border_frame2_2_2, text="15:15", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button2_2_2.pack()
     button_window2_2_2 = canvas.create_window(800, 785, anchor=tk.NW, window=border_frame2_2_2)
+    button2_2_2.bind('<Enter>', e2_2_2)
+    button2_2_2.bind('<Leave>', l2_2_2)
 
     border_frame2_2_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame2_2_3.pack(pady=15, padx=15)
     button2_2_3 = tk.Button(border_frame2_2_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button2_2_3.pack()
     button_window2_2_2 = canvas.create_window(900, 785, anchor=tk.NW, window=border_frame2_2_3)
+    button2_2_3.bind('<Enter>', e2_2_3)
+    button2_2_3.bind('<Leave>', l2_2_3)
 
     border_frame2_3_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame2_3_1.pack(pady=15, padx=15)
     button2_3_1 = tk.Button(border_frame2_3_1, text="10:10", font=f1, fg="purple", bd=0, padx=7, pady=3)
     button2_3_1.pack()
     button_window2_3_1 = canvas.create_window(700, 855, anchor=tk.NW, window=border_frame2_3_1)
+    button2_3_1.bind('<Enter>', e2_3_1)
+    button2_3_1.bind('<Leave>', l2_3_1)
 
     border_frame2_3_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame2_3_2.pack(pady=15, padx=15)
     button2_3_2 = tk.Button(border_frame2_3_2, text="13:15", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button2_3_2.pack()
     button_window2_3_2 = canvas.create_window(800, 855, anchor=tk.NW, window=border_frame2_3_2)
+    button2_3_2.bind('<Enter>', e2_3_2)
+    button2_3_2.bind('<Leave>', l2_3_2)
 
     border_frame2_3_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame2_3_3.pack(pady=15, padx=15)
     button2_3_3 = tk.Button(border_frame2_3_3, text="21:40", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button2_3_3.pack()
     button_window2_3_3 = canvas.create_window(900, 855, anchor=tk.NW, window=border_frame2_3_3)
+    button2_3_3.bind('<Enter>', e2_3_3)
+    button2_3_3.bind('<Leave>', l2_3_3)
 
     # КНОПКИ В РАСПИСАНИИ ФИЛЬМ 3
     border_frame3_1_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
@@ -856,48 +1052,64 @@ ________________________________________________________________________'''
     button3_1_1 = tk.Button(border_frame3_1_1, text="16:20", font=f1, fg="purple", bd=0, padx=7, pady=3)
     button3_1_1.pack()
     button_window3_1_1 = canvas.create_window(700, 1065, anchor=tk.NW, window=border_frame3_1_1)
+    button3_1_1.bind('<Enter>', e3_1_1)
+    button3_1_1.bind('<Leave>', l3_1_1)
 
     border_frame3_1_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame3_1_2.pack(pady=15, padx=15)
     button3_1_2 = tk.Button(border_frame3_1_2, text="18:30", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button3_1_2.pack()
     button_window3_1_2 = canvas.create_window(800, 1065, anchor=tk.NW, window=border_frame3_1_2)
+    button3_1_2.bind('<Enter>', e3_1_2)
+    button3_1_2.bind('<Leave>', l3_1_2)
 
     border_frame3_1_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame3_1_3.pack(pady=15, padx=15)
     button3_1_3 = tk.Button(border_frame3_1_3, text="21:40", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button3_1_3.pack()
     button_window3_1_3 = canvas.create_window(900, 1065, anchor=tk.NW, window=border_frame3_1_3)
+    button3_1_3.bind('<Enter>', e3_1_3)
+    button3_1_3.bind('<Leave>', l3_1_3)
 
     border_frame3_2_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame3_2_1.pack(pady=15, padx=15)
     button3_2_1 = tk.Button(border_frame3_2_1, text="21:40", font=f1, fg="purple", bd=0, padx=7, pady=3)
     button3_2_1.pack()
     button_window3_2_1 = canvas.create_window(700, 1135, anchor=tk.NW, window=border_frame3_2_1)
+    button3_2_1.bind('<Enter>', e3_2_1)
+    button3_2_1.bind('<Leave>', l3_2_1)
 
     border_frame3_2_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame3_2_2.pack(pady=15, padx=15)
     button3_2_2 = tk.Button(border_frame3_2_2, text="23:00", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button3_2_2.pack()
     button_window3_2_2 = canvas.create_window(800, 1135, anchor=tk.NW, window=border_frame3_2_2)
+    button3_2_2.bind('<Enter>', e3_2_2)
+    button3_2_2.bind('<Leave>', l3_2_2)
 
     border_frame3_2_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame3_2_3.pack(pady=15, padx=15)
     button3_2_3 = tk.Button(border_frame3_2_3, text="00:20", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button3_2_3.pack()
-    button_window3_2_2 = canvas.create_window(900, 1135, anchor=tk.NW, window=border_frame3_2_3)
+    button_window3_2_3 = canvas.create_window(900, 1135, anchor=tk.NW, window=border_frame3_2_3)
+    button3_2_3.bind('<Enter>', e3_2_3)
+    button3_2_3.bind('<Leave>', l3_2_3)
 
     border_frame3_3_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame3_3_1.pack(pady=15, padx=15)
     button3_3_1 = tk.Button(border_frame3_3_1, text="17:45", font=f1, fg="purple", bd=0, padx=7, pady=3)
     button3_3_1.pack()
     button_window3_3_1 = canvas.create_window(700, 1205, anchor=tk.NW, window=border_frame3_3_1)
+    button3_3_1.bind('<Enter>', e3_3_1)
+    button3_3_1.bind('<Leave>', l3_3_1)
 
     border_frame3_3_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame3_3_2.pack(pady=15, padx=15)
     button3_3_2 = tk.Button(border_frame3_3_2, text="23:10", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button3_3_2.pack()
     button_window3_3_2 = canvas.create_window(800, 1205, anchor=tk.NW, window=border_frame3_3_2)
+    button3_3_2.bind('<Enter>', e3_3_2)
+    button3_3_2.bind('<Leave>', l3_3_2)
 
     # КНОПКИ В РАСПИСАНИИ ФИЛЬМ 4
     border_frame4_1_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
@@ -905,97 +1117,128 @@ ________________________________________________________________________'''
     button4_1_1 = tk.Button(border_frame4_1_1, text="11:45", font=f1, fg="purple", bd=0, padx=7, pady=3)
     button4_1_1.pack()
     button_window4_1_1 = canvas.create_window(700, 1415, anchor=tk.NW, window=border_frame4_1_1)
+    button4_1_1.bind('<Enter>', e4_1_1)
+    button4_1_1.bind('<Leave>', l4_1_1)
 
     border_frame4_1_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame4_1_2.pack(pady=15, padx=15)
     button4_1_2 = tk.Button(border_frame4_1_2, text="14:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button4_1_2.pack()
     button_window4_1_2 = canvas.create_window(800, 1415, anchor=tk.NW, window=border_frame4_1_2)
+    button4_1_2.bind('<Enter>', e4_1_2)
+    button4_1_2.bind('<Leave>', l4_1_2)
 
     border_frame4_1_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame4_1_3.pack(pady=15, padx=15)
     button4_1_3 = tk.Button(border_frame4_1_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button4_1_3.pack()
     button_window4_4_2 = canvas.create_window(900, 1415, anchor=tk.NW, window=border_frame4_1_3)
+    button4_1_3.bind('<Enter>', e4_1_3)
+    button4_1_3.bind('<Leave>', l4_1_3)
 
     border_frame4_2_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame4_2_1.pack(pady=15, padx=15)
     button4_2_1 = tk.Button(border_frame4_2_1, text="10:30", font=f1, fg="purple", bd=0, padx=7, pady=3)
     button4_2_1.pack()
     button_window4_2_1 = canvas.create_window(700, 1485, anchor=tk.NW, window=border_frame4_2_1)
+    button4_2_1.bind('<Enter>', e4_2_1)
+    button4_2_1.bind('<Leave>', l4_2_1)
 
     border_frame4_2_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame4_2_2.pack(pady=15, padx=15)
     button4_2_2 = tk.Button(border_frame4_2_2, text="17:45", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button4_2_2.pack()
     button_window4_2_2 = canvas.create_window(800, 1485, anchor=tk.NW, window=border_frame4_2_2)
+    button4_2_2.bind('<Enter>', e4_2_2)
+    button4_2_2.bind('<Leave>', l4_2_2)
 
     border_frame4_3_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame4_3_1.pack(pady=15, padx=15)
     button4_3_1 = tk.Button(border_frame4_3_1, text="11:45", font=f1, fg="purple", bd=0, padx=7, pady=3)
     button4_3_1.pack()
     button_window4_3_1 = canvas.create_window(700, 1555, anchor=tk.NW, window=border_frame4_3_1)
+    button4_3_1.bind('<Enter>', e4_3_1)
+    button4_3_1.bind('<Leave>', l4_3_1)
 
     border_frame4_3_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame4_3_2.pack(pady=15, padx=15)
     button4_3_2 = tk.Button(border_frame4_3_2, text="14:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button4_3_2.pack()
     button_window4_3_2 = canvas.create_window(800, 1555, anchor=tk.NW, window=border_frame4_3_2)
+    button4_3_2.bind('<Enter>', e4_3_2)
+    button4_3_2.bind('<Leave>', l4_3_2)
 
     border_frame4_3_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame4_3_3.pack(pady=15, padx=15)
     button4_3_3 = tk.Button(border_frame4_3_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button4_3_3.pack()
     button_window4_3_3 = canvas.create_window(900, 1555, anchor=tk.NW, window=border_frame4_3_3)
-
+    button4_3_3.bind('<Enter>', e4_3_3)
+    button4_3_3.bind('<Leave>', l4_3_3)
     # КНОПКИ В РАСПИСАНИИ ФИЛЬМ 5
     border_frame5_1_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame5_1_1.pack(pady=15, padx=15)
     button5_1_1 = tk.Button(border_frame5_1_1, text="11:20", font=f1, fg="purple", bd=0, padx=7, pady=3)
     button5_1_1.pack()
     button_window5_1_1 = canvas.create_window(700, 1765, anchor=tk.NW, window=border_frame5_1_1)
+    button5_1_1.bind('<Enter>', e5_1_1)
+    button5_1_1.bind('<Leave>', l5_1_1)
 
     border_frame5_1_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame5_1_2.pack(pady=15, padx=15)
     button5_1_2 = tk.Button(border_frame5_1_2, text="16:10", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button5_1_2.pack()
     button_window5_1_2 = canvas.create_window(800, 1765, anchor=tk.NW, window=border_frame5_1_2)
+    button5_1_2.bind('<Enter>', e5_1_2)
+    button5_1_2.bind('<Leave>', l5_1_2)
 
     border_frame5_2_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame5_2_1.pack(pady=15, padx=15)
     button5_2_1 = tk.Button(border_frame5_2_1, text="10:20", font=f1, fg="purple", bd=0, padx=7, pady=3)
     button5_2_1.pack()
     button_window5_2_1 = canvas.create_window(700, 1835, anchor=tk.NW, window=border_frame5_2_1)
+    button5_2_1.bind('<Enter>', e5_2_1)
+    button5_2_1.bind('<Leave>', l5_2_1)
 
     border_frame5_2_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame5_2_2.pack(pady=15, padx=15)
     button5_2_2 = tk.Button(border_frame5_2_2, text="14:30", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button5_2_2.pack()
     button_window5_2_2 = canvas.create_window(800, 1835, anchor=tk.NW, window=border_frame5_2_2)
+    button5_2_2.bind('<Enter>', e5_2_2)
+    button5_2_2.bind('<Leave>', l5_2_2)
 
     border_frame5_2_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame5_2_3.pack(pady=15, padx=15)
     button5_2_3 = tk.Button(border_frame5_2_3, text="19:50", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button5_2_3.pack()
     button_window5_2_2 = canvas.create_window(900, 1835, anchor=tk.NW, window=border_frame5_2_3)
+    button5_2_3.bind('<Enter>', e5_2_3)
+    button5_2_3.bind('<Leave>', l5_2_3)
 
     border_frame5_3_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame5_3_1.pack(pady=15, padx=15)
     button5_3_1 = tk.Button(border_frame5_3_1, text="11:50", font=f1, fg="purple", bd=0, padx=7, pady=3)
     button5_3_1.pack()
     button_window5_3_1 = canvas.create_window(700, 1905, anchor=tk.NW, window=border_frame5_3_1)
+    button5_3_1.bind('<Enter>', e5_3_1)
+    button5_3_1.bind('<Leave>', l5_3_1)
 
     border_frame5_3_2 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame5_3_2.pack(pady=15, padx=15)
     button5_3_2 = tk.Button(border_frame5_3_2, text="17:40", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button5_3_2.pack()
     button_window5_3_2 = canvas.create_window(800, 1905, anchor=tk.NW, window=border_frame5_3_2)
+    button5_3_2.bind('<Enter>', e5_3_2)
+    button5_3_2.bind('<Leave>', l5_3_2)
 
     border_frame5_3_3 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame5_3_3.pack(pady=15, padx=15)
     button5_3_3 = tk.Button(border_frame5_3_3, text="23:20", font=f1, fg=purple, bd=0, padx=7, pady=3)
     button5_3_3.pack()
     button_window5_3_3 = canvas.create_window(900, 1905, anchor=tk.NW, window=border_frame5_3_3)
+    button5_3_3.bind('<Enter>', e5_3_3)
+    button5_3_3.bind('<Leave>', l5_3_3)
 
 
     if k == 1:
