@@ -761,7 +761,7 @@ def b2():
     #КНОПКИ В РАСПИСАНИИ ФИЛЬМ 1
     border_frame1_1_1 = tk.Frame(canvas, highlightbackground=purple, highlightcolor=purple, highlightthickness=2, bd=0)
     border_frame1_1_1.pack(pady=15, padx=15)
-    button1_1_1 = tk.Button(border_frame1_1_1, text="11:45", font = f1, fg="purple", bd=0, padx=7, pady=3)
+    button1_1_1 = tk.Button(border_frame1_1_1, text="11:45", font = f1, fg="purple", bd=0, padx=7, pady=3, command=open_hall_file)
     button1_1_1.pack()
     button_window1_1_1 = canvas.create_window(700, 365, anchor=tk.NW, window=border_frame1_1_1)
     button1_1_1.bind('<Enter>', e1_1_1)
@@ -1377,5 +1377,9 @@ def update_photo():
     l1.config(image=next(photo_iterator))
     l1.after(5000, update_photo)
 update_photo()
+
+def open_hall_file():
+    import subprocess
+    subprocess.Popen(["python", "hall.py"])
 
 m.mainloop()
