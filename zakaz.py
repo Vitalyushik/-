@@ -3,6 +3,8 @@ from random import *
 from datetime import datetime
 from tkinter import font
 import tkinter as tk
+import webbrowser
+import tkintermapview
 
 from PIL import ImageTk, Image
 import itertools
@@ -1265,11 +1267,163 @@ def b4():
 
 def b3():
     w3 = Toplevel(m)
-    w3.title('Расписание')
+    w3.title('КОНТАКТЫ')
     w3.iconbitmap('icon.ico')
     w3.resizable(False, False)
-    w3.geometry('800x501+200+50')
+    w3.geometry('1200x700')
     lw3 = Label(w3, image=iw3)
+    l3 = Label(w3, text="Контактная информация", font=("Helvetica", 24))
+    l3_1 = Label(w3, text="Сеть кинотеатров «Премьер Зал» - это "
+                          "уникальный холдинг, в который входит "
+                          "3 собственных кинотеатра \nв Екатеринбурге "
+                          "и свыше 300 кинотеатров-партнеров по всей России",
+                 font=("Helvetica", 12), justify='left')
+    l3_1.place(x=190, y=150)
+
+    l3_2 = Label(w3, text="— ККЦ «Омега», г. Екатеринбург,"
+                          " просп. Космонавтов, 41, 4 этаж, тел.: 23-666-65",
+                 font=("Helvetica", 12), justify='left')
+    l3_2.place(x=190, y=210)
+
+    l3_2 = Label(w3, text="— «Премьер Зал Гранат», г. Екатеринбург,"
+                          " ул.Амундсена, 63, 3 этаж, тел.: 23-666-61",
+                 font=("Helvetica", 12), justify='left')
+    l3_2.place(x=190, y=240)
+
+    l3_3 = Label(w3, text="— «Премьер Зал Парк Хаус», г. Екатеринбург,"
+                          " ул.Сулимова, 50, 3 этаж, тел.: 23-666-67",
+                 font=("Helvetica", 12), justify='left')
+    l3_3.place(x=190, y=270)
+
+    l3_4 = Label(w3, text="Единый справочный номер: 3-726-726",
+                 font=("Helvetica", 12, "bold"), justify='left', )
+    l3_4.place(x=190, y=300)
+
+    l3_5 = Label(w3, text="Отдел персонала:",
+                 font=("Helvetica", 12, "bold"), justify='left')
+    l3_5.place(x=190, y=340)
+
+    l3_6 = Label(w3, text="тел.: 8-932-123-89-37, эл. почта: personal@premierzal.ru",
+                 font=("Helvetica", 12), justify='left')
+    l3_6.place(x=190, y=370)
+
+    l3_7 = Label(w3, text="Мы в соцсетях", font=("Helvetica", 20), justify='left')
+    l3_7.place(x=190, y=400)
+
+    l3_8 = Label(w3, text="Местоположение", font=("Helvetica", 20), justify='left')
+    l3_8.place(x=190, y=500)
+
+    vk = ImageTk.PhotoImage(Image.open('vk.png').resize((40, 40)))
+    vk_t = ImageTk.PhotoImage(Image.open('vk_t.png').resize((40, 40)))
+
+    def btn_1_e(e):
+        btn_1['image'] = vk_t
+
+    def btn_1_l(e):
+        btn_1['image'] = vk
+
+    def open_vk():
+        webbrowser.open('https://vk.com/premierzal')
+
+    btn_1 = Button(w3, image=vk, bg="#F0F4F7", borderwidth=0, command=open_vk)
+    btn_1.place(x=190, y=450)
+    btn_1.bind('<Enter>', btn_1_e)
+    btn_1.bind('<Leave>', btn_1_l)
+
+    youtube = ImageTk.PhotoImage(Image.open('youtube.png').resize((40, 40)))
+    youtube_t = ImageTk.PhotoImage(Image.open('youtube_t.png').resize((40, 40)))
+
+    def btn_2_e(e):
+        btn_2['image'] = youtube_t
+
+    def btn_2_l(e):
+        btn_2['image'] = youtube
+
+    def open_youtube():
+        webbrowser.open('https://www.youtube.com/channel/UCf2QiK-LXkqsJYNLMdkWD6A')
+
+    btn_2 = Button(w3, image=youtube, bg="#F0F4F7", borderwidth=0, command=open_youtube)
+    btn_2.place(x=250, y=450)
+    btn_2.bind('<Enter>', btn_2_e)
+    btn_2.bind('<Leave>', btn_2_l)
+    # btn_2 = Button(w3, bg=wh, borderwidth=0, height=1, width=10, text='ФИЛЬМЫ', fg=black, font=f, activebackground=wh,
+    #          activeforeground=black, command=b1)
+
+    twit = ImageTk.PhotoImage(Image.open('twitter.png').resize((40, 40)))
+    twit_t = ImageTk.PhotoImage(Image.open('twitter_t.png').resize((40, 40)))
+
+    def btn_3_e(e):
+        btn_3['image'] = twit_t
+
+    def btn_3_l(e):
+        btn_3['image'] = twit
+
+    def open_twit():
+        webbrowser.open('https://x.com/premierzal?mx=2')
+
+    btn_3 = Button(w3, image=twit, bg="#F0F4F7", borderwidth=0, command=open_twit)
+    btn_3.place(x=310, y=450)
+    btn_3.bind('<Enter>', btn_3_e)
+    btn_3.bind('<Leave>', btn_3_l)
+
+    map = ImageTk.PhotoImage(Image.open('map.png').resize((40, 40)))
+    map_t = ImageTk.PhotoImage(Image.open('map_t.png').resize((40, 40)))
+
+    def btn_4_e(e):
+        btn_4['image'] = map_t
+
+    def btn_4_l(e):
+        btn_4['image'] = map
+
+    def open_map():
+        w_map = Toplevel(w3)
+        w_map.title('КАРТА')
+        w_map.iconbitmap('icon.ico')
+        w_map.resizable(False, False)
+        w_map.geometry('800x600')
+        w_fr = LabelFrame(w_map)
+        w_fr.pack(pady=20)
+
+        mw = tkintermapview.TkinterMapView(w_map, width=800, height=600, corner_radius=0)
+        mw.set_position(56.89992921209157, 60.612832723260446)
+        mw.set_zoom(11)
+        marker_1 = mw.set_position(56.89992921209157, 60.612832723260446, marker=True)
+
+        marker_2 = mw.set_position(56.79728684849465, 60.581814468466696, marker=True)
+
+        marker_3 = mw.set_position(56.863124789835425, 60.63004649795355, marker=True)
+
+        # print(marker_1.position, marker_1.text)
+
+        marker_1.set_text("")
+        mw.pack
+        mw.place(x=0, y=0)
+
+        W.mainloop()
+
+    btn_4 = Button(w3, image=map, bg="#F0F4F7", borderwidth=0, command=open_map)
+    btn_4.place(x=190, y=550)
+    btn_4.bind('<Enter>', btn_4_e)
+    btn_4.bind('<Leave>', btn_4_l)
+
+    odn = ImageTk.PhotoImage(Image.open('odnokl.png').resize((40, 40)))
+    odn_t = ImageTk.PhotoImage(Image.open('odnokl_t.png').resize((40, 40)))
+
+    def btn_5_e(e):
+        btn_5['image'] = odn_t
+
+    def btn_5_l(e):
+        btn_5['image'] = odn
+
+    def open_odn():
+        webbrowser.open('https://ok.ru/premierzal')
+
+    btn_5 = Button(w3, image=odn, bg="#F0F4F7", borderwidth=0, command=open_odn)
+    btn_5.place(x=370, y=450)
+    btn_5.bind('<Enter>', btn_5_e)
+    btn_5.bind('<Leave>', btn_5_l)
+
+    l3.place(x=190, y=80)
     lw3.pack()
     w3.grab_set()
     w3.mainloop()
@@ -1355,7 +1509,7 @@ m2 = PhotoImage(file='main2.png')
 m3 = PhotoImage(file='main3.png')
 
 iw4 = PhotoImage(file='w4.png')
-iw3 = PhotoImage(file='w3.png')
+iw3 = ImageTk.PhotoImage(Image.open('фон афиша.png').resize((1200,700)))
 iw1 = PhotoImage(file='фон афиша.png')
 korzina = PhotoImage(file='korz.png')
 d = PhotoImage(file='zak.png')
