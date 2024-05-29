@@ -70,6 +70,23 @@ def b1():
                                       "\nтолько действуя сообща.Смогут ли они разрешить свои разногласия и вернуться домой?",
                             font=("Helvetica", 16), justify='left')
         label_text1.place(x=220, y=440)
+        label_text5 = Label(vit, text="Купить билет на данный фильм можно перейдя по кнопке ниже:",
+                            font=("Helvetica", 16), justify='left')
+        label_text5.place(x=220, y=700)
+
+        def change(e):
+            button.configure(fg=black)
+
+        def unchange(e):
+            button.configure(fg=purple)
+
+        button = Button(vit, bg="#F0F4F7", height=1, width=13,
+                        fg=black, borderwidth=0, font=('Helvetica', 24),
+                        activebackground=wh, activeforeground=black, text="РАСПИСАНИЕ", command=b2)
+        button.place(x=205, y=750)
+        button.bind('<Enter>', unchange)
+        button.bind('<Leave>', change)
+
 
         vit.grab_set()
         vit.mainloop()
@@ -103,6 +120,22 @@ def b1():
                                        "\nдорогое: любовь и дружбу.",
                             font=("Helvetica", 16), justify='left')
         label_text1.place(x=220, y=470)
+        label_text5 = Label(sltn, text="Купить билет на данный фильм можно перейдя по кнопке ниже:",
+                            font=("Helvetica", 16), justify='left')
+        label_text5.place(x=220, y=700)
+
+        def change(e):
+            button.configure(fg=black)
+
+        def unchange(e):
+            button.configure(fg=purple)
+
+        button = Button(sltn, bg="#F0F4F7", height=1, width=13,
+                        fg=black, borderwidth=0, font=('Helvetica', 24),
+                        activebackground=wh, activeforeground=black, text="РАСПИСАНИЕ", command=b2)
+        button.place(x=205, y=750)
+        button.bind('<Enter>', unchange)
+        button.bind('<Leave>', change)
 
         sltn.grab_set()
         sltn.mainloop()
@@ -131,6 +164,22 @@ def b1():
                                          "\nродной город от коварных планов злодея Отто фон Моржа.",
                             font=("Helvetica", 16), justify='left')
         label_text1.place(x=220, y=440)
+        label_text5 = Label(superp, text="Купить билет на данный фильм можно перейдя по кнопке ниже:",
+                            font=("Helvetica", 16), justify='left')
+        label_text5.place(x=220, y=700)
+
+        def change(e):
+            button.configure(fg=black)
+
+        def unchange(e):
+            button.configure(fg=purple)
+
+        button = Button(superp, bg="#F0F4F7", height=1, width=13,
+                        fg=black, borderwidth=0, font=('Helvetica', 24),
+                        activebackground=wh, activeforeground=black, text="РАСПИСАНИЕ", command=b2)
+        button.place(x=205, y=750)
+        button.bind('<Enter>', unchange)
+        button.bind('<Leave>', change)
 
         superp.grab_set()
         superp.mainloop()
@@ -160,6 +209,22 @@ def b1():
                                        "\nсохранить свое желание помочь, несмотря на его растущую черствость.",
                             font=("Helvetica", 16), justify='left')
         label_text1.place(x=220, y=440)
+        label_text5 = Label(adel, text="Купить билет на данный фильм можно перейдя по кнопке ниже:",
+                            font=("Helvetica", 16), justify='left')
+        label_text5.place(x=220, y=700)
+
+        def change(e):
+            button.configure(fg=black)
+
+        def unchange(e):
+            button.configure(fg=purple)
+
+        button = Button(adel, bg="#F0F4F7", height=1, width=13,
+                        fg=black, borderwidth=0, font=('Helvetica', 24),
+                        activebackground=wh, activeforeground=black, text="РАСПИСАНИЕ", command=b2)
+        button.place(x=205, y=750)
+        button.bind('<Enter>', unchange)
+        button.bind('<Leave>', change)
 
         adel.grab_set()
         adel.mainloop()
@@ -190,6 +255,22 @@ def b1():
                                       "\nно вынуждена провести ночь в доме, куда вскоре нагрянут безумцы в кукольных масках.",
                             font=("Helvetica", 16), justify='left')
         label_text1.place(x=220, y=440)
+        label_text5 = Label(nez, text="Купить билет на данный фильм можно перейдя по кнопке ниже:",
+                            font=("Helvetica", 16), justify='left')
+        label_text5.place(x=220, y=700)
+
+        def change(e):
+            button.configure(fg=black)
+
+        def unchange(e):
+            button.configure(fg=purple)
+
+        button = Button(nez, bg="#F0F4F7", height=1, width=13,
+                        fg=black, borderwidth=0, font=('Helvetica', 24),
+                        activebackground=wh, activeforeground=black, text="РАСПИСАНИЕ", command=b2)
+        button.place(x=205, y=750)
+        button.bind('<Enter>', unchange)
+        button.bind('<Leave>', change)
 
         nez.grab_set()
         nez.mainloop()
@@ -220,6 +301,22 @@ def b1():
                                      "\nСовенком и Тигрой, отправляются в город, чтобы навести в нем свои кровавые порядки.",
                             font=("Helvetica", 16), justify='left')
         label_text1.place(x=220, y=440)
+        label_text5 = Label(vp, text="Купить билет на данный фильм можно перейдя по кнопке ниже:",
+                            font=("Helvetica", 16), justify='left')
+        label_text5.place(x=220, y=700)
+
+        def change(e):
+            button.configure(fg=black)
+
+        def unchange(e):
+            button.configure(fg=purple)
+
+        button = Button(vp, bg="#F0F4F7", height=1, width=13,
+                        fg=black, borderwidth=0, font=('Helvetica', 24),
+                        activebackground=wh, activeforeground=black, text="РАСПИСАНИЕ", command=b2)
+        button.place(x=205, y=750)
+        button.bind('<Enter>', unchange)
+        button.bind('<Leave>', change)
 
         vp.grab_set()
         vp.mainloop()
@@ -248,6 +345,22 @@ def b1():
                                        "\nбилет с огромным выигрышем. Эта судная ночь выпустит на волю все людские пороки.",
                             font=("Helvetica", 16), justify='left')
         label_text1.place(x=220, y=440)
+        label_text5 = Label(sudn, text="Купить билет на данный фильм можно перейдя по кнопке ниже:",
+                            font=("Helvetica", 16), justify='left')
+        label_text5.place(x=220, y=700)
+
+        def change(e):
+            button.configure(fg=black)
+
+        def unchange(e):
+            button.configure(fg=purple)
+
+        button = Button(sudn, bg="#F0F4F7", height=1, width=13,
+                        fg=black, borderwidth=0, font=('Helvetica', 24),
+                        activebackground=wh, activeforeground=black, text="РАСПИСАНИЕ", command=b2)
+        button.place(x=205, y=750)
+        button.bind('<Enter>', unchange)
+        button.bind('<Leave>', change)
 
         sudn.grab_set()
         sudn.mainloop()
@@ -278,6 +391,22 @@ def b1():
                                       "\nон знал о прошлом, и сделать выбор, который определит будущее как обезьян,"
                                       "\nтак и людей.", font=("Helvetica", 16), justify='left')
         label_text1.place(x=220, y=440)
+        label_text5 = Label(zam, text="Купить билет на данный фильм можно перейдя по кнопке ниже:",
+                            font=("Helvetica", 16), justify='left')
+        label_text5.place(x=220, y=700)
+
+        def change(e):
+            button.configure(fg=black)
+
+        def unchange(e):
+            button.configure(fg=purple)
+
+        button = Button(zam, bg="#F0F4F7", height=1, width=13,
+                        fg=black, borderwidth=0, font=('Helvetica', 24),
+                        activebackground=wh, activeforeground=black, text="РАСПИСАНИЕ", command=b2)
+        button.place(x=205, y=750)
+        button.bind('<Enter>', unchange)
+        button.bind('<Leave>', change)
 
         zam.grab_set()
         zam.mainloop()
@@ -307,6 +436,22 @@ def b1():
                                       "\nна дерзкую миссию против нацистов. Теперь их дело — война, и вести они её "
                                       "\nбудут совершенно не по-джентльменски.", font=("Helvetica", 16), justify='left')
         label_text1.place(x=220, y=470)
+        label_text5 = Label(tof, text="Купить билет на данный фильм можно перейдя по кнопке ниже:",
+                            font=("Helvetica", 16), justify='left')
+        label_text5.place(x=220, y=700)
+
+        def change(e):
+            button.configure(fg=black)
+
+        def unchange(e):
+            button.configure(fg=purple)
+
+        button = Button(tof, bg="#F0F4F7", height=1, width=13,
+                        fg=black, borderwidth=0, font=('Helvetica', 24),
+                        activebackground=wh, activeforeground=black, text="РАСПИСАНИЕ", command=b2)
+        button.place(x=205, y=750)
+        button.bind('<Enter>', unchange)
+        button.bind('<Leave>', change)
         tof.grab_set()
         tof.mainloop()
 
@@ -340,6 +485,22 @@ def b1():
                                      "\nназывающего себя Призраком. Он предлагает Грому сыграть в опасную игру, ставка"
                                      "\n в которой — жизни обычных людей.", font=("Helvetica", 16), justify='left')
         label_text1.place(x=220, y=440)
+        label_text5 = Label(sn, text="Купить билет на данный фильм можно перейдя по кнопке ниже:",
+                            font=("Helvetica", 16), justify='left')
+        label_text5.place(x=220, y=700)
+
+        def change(e):
+            button.configure(fg=black)
+
+        def unchange(e):
+            button.configure(fg=purple)
+
+        button = Button(sn, bg="#F0F4F7", height=1, width=13,
+                        fg=black, borderwidth=0, font=('Helvetica', 24),
+                        activebackground=wh, activeforeground=black, text="РАСПИСАНИЕ", command=b2)
+        button.place(x=205, y=750)
+        button.bind('<Enter>', unchange)
+        button.bind('<Leave>', change)
         sn.grab_set()
         sn.mainloop()
 
@@ -540,8 +701,19 @@ def bilet(name_of_movie, date_of_movie, name_of_theatre):
 
     purple = '#951b81'
     black = 'black'
-    button = Button(w_bilet, text="Показать чек", command=check)
-    button.place(x=500, y=330)
+
+    def change(e):
+        button.configure(fg=black)
+
+    def unchange(e):
+        button.configure(fg=purple)
+
+    button = Button(w_bilet, bg=wh, height=1, width=13,
+                    fg=black, borderwidth=0, font=('Helvetica', 12),
+                    activebackground=wh, activeforeground=black, text="ПОКАЗАТЬ ЧЕК", command=check)
+    button.place(x=400, y=330)
+    button.bind('<Enter>', unchange)
+    button.bind('<Leave>', change)
     w_bilet.grab_set()
     w_bilet.mainloop()
 def check():
@@ -668,7 +840,7 @@ def b2():
                     buy_button.config(state=tk.DISABLED)  # Делаем кнопку неактивной
 
             var = IntVar()
-            cb = Checkbutton(W1, text="""Я согласен с условиями пользлования
+            cb = Checkbutton(W1, text="""Я согласен с условиями пользования
         и правилами к-т 'Премьер Зал" """,
                              variable=var,
                              command=get_value, background=bg_color, foreground='green', activeforeground='green',
